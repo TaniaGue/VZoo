@@ -16,15 +16,18 @@ public class Animal {
     private char image;
     private String specie;
     private String sound;
+    private Habitat habitat;
     private int animalSatisfation;
 
-    public Animal(String name, char image, String specie, String sound, int animalSatisfation) {
+    public Animal(String name, char image, String specie, String sound, Habitat habitat, int animalSatisfation) {
         this.name = name;
         this.image = image;
         this.specie = specie;
         this.sound = sound;
+        this.habitat = habitat;
         this.animalSatisfation = animalSatisfation;
     }
+
 
     @Override
     public String toString() {
@@ -72,6 +75,15 @@ public class Animal {
     public void setSound(String sound) {
         this.sound = sound;
     }
+
+    public Habitat getHabitat() {
+        return habitat;
+    }
+
+    public void setHabitat(Habitat habitat) {
+        this.habitat = habitat;
+    }
+
 
     public int getAnimalSatisfation() {
         return animalSatisfation;
