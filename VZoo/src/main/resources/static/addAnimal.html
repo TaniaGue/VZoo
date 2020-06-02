@@ -1,0 +1,116 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Animal</title>
+</head>
+<body>
+    <h2>New Animal</h2>
+
+
+    <form action="#" th:action="@{/addAnimal}" th:object="${animal}" method="post">
+
+    </div>
+
+
+
+        <h2>Enter animal data</h2>
+
+        <div class="field">
+            <div class="form-group col-md-6">
+                <label for="name" class="col-form-label">Name</label>
+                <input type="text" th:field="*{name}" class="form-control" id="name" placeholder="Name">
+                <span th:if="${#fields.hasErrors('name')}" th:errors="*{name}" class="text-danger"></span>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="avatar" class="col-form-label">Avatar</label>
+                <input type="file" th:field="*{avatar}" id="avatar" placeholder="Avatar">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="species" class="col-form-label">Species</label>
+                <input type="text" th:field="*{species}" class="form-control" name="specie"  placeholder="Specie" /><br>
+                <span th:if="${#fields.hasErrors('species')}" th:errors="*{species}" class="text-danger"></span>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="sound" class="col-form-label">Sound</label>
+                <input type="text" th:field="*{sound}" class="form-control" id="sound" placeholder="Sound">
+                <span th:if="${#fields.hasErrors('sound')}" th:errors="*{sound}" class="text-danger"></span>
+            </div>
+            <br>
+            <div class="form-group col-md-6">
+                <label for="habitat" class="col-form-label">Habitat</label>
+                <datalist  th:field="*{habitat}" class="form-control" id="habitat" placeholder="Habitat"> </datalist>
+                <span th:if="${#fields.hasErrors('habitat')}" th:errors="*{habitat}" class="text-danger"></span>
+            </div>
+
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-6 mt-5">
+                <input type="submit" class="btn btn-primary" value="Add Animal" href="animalPage.html">
+            </div>
+        </div>
+    </form>
+</body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Animal</title>
+</head>
+<body>
+    <h2>New Animal</h2>
+
+//Adicionar animal
+
+    <form action="#" th:action="@{/addAnimal}" th:object="${animal}" method="post">
+
+    </div>
+
+
+
+        <h2>Enter animal data</h2>
+
+        <div class="field">
+            <div class="form-group col-md-6">
+                <label for="name" class="col-form-label">Name</label>
+                <input type="text" th:field="*{name}" class="form-control" id="name" placeholder="Name">
+                <span th:if="${#fields.hasErrors('name')}" th:errors="*{name}" class="text-danger"></span>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="image" class="col-form-label">Image</label>
+                <input type="image" th:field="*{image}" class="form-control" id="image" placeholder="Image">
+                <span th:if="${#fields.hasErrors('image')}" th:errors="*{image}" class="text-danger"></span>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="species" class="col-form-label">Species</label>
+                <input type="text" th:field="*{species}" class="form-control" name="specie"  placeholder="Specie" /><br>
+                <span th:if="${#fields.hasErrors('species')}" th:errors="*{species}" class="text-danger"></span>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="sound" class="col-form-label">Sound</label>
+                <input type="text" th:field="*{sound}" class="form-control" id="sound" placeholder="Sound">
+                <span th:if="${#fields.hasErrors('sound')}" th:errors="*{sound}" class="text-danger"></span>
+            </div>
+            <br>
+            <div class="form-group col-md-6">
+                <label for="habitat" class="col-form-label">Habitat</label>
+                <datalist  th:field="*{habitat}" class="form-control" id="habitat" placeholder="Habitat"> </datalist>
+                <span th:if="${#fields.hasErrors('habitat')}" th:errors="*{habitat}" class="text-danger"></span>
+            </div>
+
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-6 mt-5">
+                <input type="submit" class="btn btn-primary" value="Add Animal" href="animalPage.html">
+            </div>
+        </div>
+    </form>
+</body>
+>>>>>>> eb67cdb903365611621c2cbe82b0878663e31b78
+</html>
