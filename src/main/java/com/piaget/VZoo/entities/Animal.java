@@ -1,5 +1,7 @@
 package com.piaget.VZoo.entities;
 
+import com.piaget.VZoo.Satisfation;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -9,22 +11,25 @@ import javax.persistence.Id;
 public class Animal {
 
     @Id
-    @GeneratedValue(strategy=GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
 
     private String name;
     private char image;
     private String specie;
     private String sound;
+    private Habitat habitat;
     private int animalSatisfation;
 
-    public Animal(String name, char image, String specie, String sound, int animalSatisfation) {
+    public Animal(String name, char image, String specie, String sound, Habitat habitat, int animalSatisfation) {
         this.name = name;
         this.image = image;
         this.specie = specie;
         this.sound = sound;
+        this.habitat = habitat;
         this.animalSatisfation = animalSatisfation;
     }
+
 
     @Override
     public String toString() {
@@ -73,11 +78,29 @@ public class Animal {
         this.sound = sound;
     }
 
+    public Habitat getHabitat() {
+        return habitat;
+    }
+
+    public void setHabitat(Habitat habitat) {
+        this.habitat = habitat;
+    }
+
+
     public int getAnimalSatisfation() {
         return animalSatisfation;
     }
 
     public void setAnimalSatisfation(int animalSatisfation) {
         this.animalSatisfation = animalSatisfation;
+    }
+
+    public void calculateSatisfaction() {
+        animalSatisfation = Satisfation.calculate(this);
+    }
+
+    public boolean EqualsTo(Animal a) {
+
+        return
     }
 }

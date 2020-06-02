@@ -43,8 +43,36 @@ public class HabitatController {
         }
 
         habitatRepository.save(habitat);
-        model.addHabitat("habitat", habitatRepository.findAll());
+        model.addAttribute("habitat", habitatRepository.findAll());
         return "habitatPage";
     }
+
+    @GetMapping("/editHabitat/{id}")
+    public String showUpdateForm(@PathVariable("id") long id, Model model) {
+        Habitat habitat = habitatRepository.findById(id);
+        model.addAttribute("habitat", habitat);
+        return "update-habitat";
+    }
+
+    @PostMapping("/updateHabitat/{id}")
+    public String updateHabitat(@PathVariable("id") long id, @Valid Habitat habitat, BindingResult result, Model model) {
+        if (result.hasErrors()) {
+            habitat.setId(id);
+            return "update-habitat";
+        }
+
+        habitatRepository.save(habitat);
+        model.addAttribute("habitat", habitatRepository.findAll());
+        return "habitatspage";
+    }
+
+    @GetMapping("/deleteHabitat/{id}")
+    public String deleteHabitat(@PathVariable("id") long id, Model model) {
+        Habitat habitat = habitatRepository.findById(id);
+        habitatRepository.delete(habitat);
+        model.addAttribute("habitat", habitatRepository.findAll());
+        return "habitatPage";
+    }
+
 
 }

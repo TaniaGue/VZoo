@@ -9,5 +9,5 @@ public interface HabitatRepository  extends CrudRepository<Habitat, Long> {
     List<Habitat> findByName(String name);
     List<Habitat> findByArea(String area);
     List<Habitat> findByImage(String image);
-    Animal findById(long id);
+    Habitat findById(long id);
 }
