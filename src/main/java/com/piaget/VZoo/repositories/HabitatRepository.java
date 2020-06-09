@@ -1,3 +1,4 @@
+
 package com.piaget.VZoo.repositories;
 
 import com.piaget.VZoo.entities.Animal;
@@ -10,4 +11,5 @@ public interface HabitatRepository  extends CrudRepository<Habitat, Long> {
     List<Habitat> findByArea(String area);
     List<Habitat> findByImage(String image);
     Habitat findById(long id);
+    List<Habitat> findAll();
 }

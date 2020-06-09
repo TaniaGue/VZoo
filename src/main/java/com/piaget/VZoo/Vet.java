@@ -1,7 +1,8 @@
+
 package com.piaget.VZoo;
 
 
-public class Vet extends EmployeePage {
+public class Vet<AnimalPage> extends EmployeePage {
 
     private AnimalPage animal;
 

@@ -1,35 +1,99 @@
 package com.piaget.VZoo.entities;
-
 import com.piaget.VZoo.Satisfation;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
+
 
 @Entity
 public class Animal {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private long id;
 
-    private String name;
-    private char image;
-    private String specie;
-    private String sound;
-    private Habitat habitat;
-    private int animalSatisfation;
+        @Id
+        @GeneratedValue(strategy=GenerationType.AUTO)
+        private long id;
+        private String name;
+        private char image;
+        private String specie;
+        private String sound;
+        private int animalSatisfation;
 
-    public Animal(String name, char image, String specie, String sound, Habitat habitat, int animalSatisfation) {
+
+
+    @OneToMany
+    private List<Habitat> habitat = new ArrayList<>();
+
+    protected Animal() {}
+
+    public Animal(String name, String species) {
         this.name = name;
-        this.image = image;
-        this.specie = specie;
-        this.sound = sound;
-        this.habitat = habitat;
-        this.animalSatisfation = animalSatisfation;
+        this.specie = species;
     }
 
+
+        public long getId() {
+            return id;
+        }
+
+        public void setId(long id) {
+            this.id = id;
+        }
+
+        public String getName() {
+            return name;
+        }
+
+        public void setName(String name) {
+            this.name = name;
+        }
+
+        public char getImage() {
+            return image;
+        }
+
+        public void setImage(char image) {
+            this.image = image;
+        }
+
+        public String getSpecie() {
+            return specie;
+        }
+
+        public void setSpecie(String specie) {
+            this.specie = specie;
+        }
+
+        public String getSound() {
+            return sound;
+        }
+
+        public void setSound(String sound) {
+            this.sound = sound;
+        }
+
+
+        public Habitat getHabitat() {
+            return this.habitat.get(this.habitat.size() - 1);
+         }
+
+         public void setHabitat(Habitat habitat) {
+            this.habitat.add(habitat);
+            habitat.addAnimal(this);
+        }
+
+        public int getAnimalSatisfation() {
+            return animalSatisfation;
+        }
+
+        public void setAnimalSatisfation(int animalSatisfation) {
+            this.animalSatisfation = animalSatisfation;
+        }
+
+
+     public List<Habitat> getAllHabitats() {
+    return (List<Habitat>) this.habitat;
+}
 
     @Override
     public String toString() {
@@ -37,70 +101,7 @@ public class Animal {
                 "Animal[id=%d, name='%s', specie='%s']",
                 id, name, specie);
     }
-
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public char getImage() {
-        return image;
-    }
-
-    public void setImage(char image) {
-        this.image = image;
-    }
-
-    public String getSpecie() {
-        return specie;
-    }
-
-    public void setSpecie(String specie) {
-        this.specie = specie;
-    }
-
-    public String getSound() {
-        return sound;
-    }
-
-    public void setSound(String sound) {
-        this.sound = sound;
-    }
-
-    public Habitat getHabitat() {
-        return habitat;
-    }
-
-    public void setHabitat(Habitat habitat) {
-        this.habitat = habitat;
-    }
-
-
-    public int getAnimalSatisfation() {
-        return animalSatisfation;
-    }
-
-    public void setAnimalSatisfation(int animalSatisfation) {
-        this.animalSatisfation = animalSatisfation;
-    }
-
     public void calculateSatisfaction() {
         animalSatisfation = Satisfation.calculate(this);
-    }
-
-    public boolean EqualsTo(Animal a) {
-
-        return
     }
 }
