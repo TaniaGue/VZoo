@@ -1,14 +1,9 @@
 
 package com.piaget.VZoo;
 
-import com.piaget.VZoo.entities.Animal;
 import com.piaget.VZoo.entities.Habitat;
-import com.piaget.VZoo.repositories.AnimalRepository;
-import com.piaget.VZoo.repositories.EmployeeRepository;
 import com.piaget.VZoo.repositories.HabitatRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import com.piaget.VZoo.entities.Animal;
-import com.piaget.VZoo.repositories.AnimalRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -33,13 +28,18 @@ public class HabitatController {
 
     @GetMapping("/createHabitat")
     public String createHabitat(Habitat habitat) {
-        return "createHabitat";
+        return "add-habitat";
     }
 
 
 
     @GetMapping ("/addHabitat")
     public String addHabitat(@Valid Habitat habitat, BindingResult result, Model model) {
+        if (result.hasErrors()) {
+
+            return createHabitat(habitat);
+        }
+
         habitatRepository.save(habitat);
         model.addAttribute("habitat", habitatRepository.findAll());
         return "habitatPage";
@@ -61,7 +61,7 @@ public class HabitatController {
 
         habitatRepository.save(habitat);
         model.addAttribute("habitat", habitatRepository.findAll());
-        return "habitatspage";
+        return "habitatPage";
     }
 
     @GetMapping("/deleteHabitat/{id}")

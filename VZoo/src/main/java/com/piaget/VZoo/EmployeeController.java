@@ -20,14 +20,14 @@ public class EmployeeController {
 
 
     @GetMapping("/employeePage")
-    public String attendants(Model model)
+    public String employee(Model model)
     {
         model.addAttribute("employeePage", new EmployeePage());
         return "employeePage";
     }
 
     @PostMapping("/employeePage")
-    public String goToAnimals(Model model)
+    public String goToEmployeePage(Model model)
     {
         return "employeePage";
     }
@@ -48,8 +48,8 @@ public class EmployeeController {
     @PostMapping("/addEmployee")
     public String addEmployee(@Valid Employee employee, BindingResult result, Model model) {
         employeeRepository.save(employee);
-        model.addAttribute("attendants", employeeRepository.findAll());
-        return "employeePage";
+        model.addAttribute("employee", employeeRepository.findAll());
+        return "add-employee";
     }
 
 

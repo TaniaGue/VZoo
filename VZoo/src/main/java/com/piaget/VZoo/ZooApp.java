@@ -13,9 +13,7 @@ import org.springframework.context.annotation.Bean;
 
 public class ZooApp {
     private static final Logger log = LoggerFactory.getLogger(ZooApp.class);
-
     public static void main(String[] args) {
         SpringApplication.run(ZooApp.class, args);
     }
-
 }

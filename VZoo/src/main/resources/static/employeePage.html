@@ -15,7 +15,7 @@
         <button><a href="addEmployee.html" target="_self">New Employee</a></button>
         <button><a href="zooPage.html" target="_self">MainPage</a></button>
 
-        <div th:switch="${Emplyee}" class="container my-5">
+        <div th:switch="${Employee}" class="container my-5">
             <div class="row">
                 <div class="col-md-6">
                     <h2 th:case="null">No Employee yet!</h2>
@@ -31,20 +31,18 @@
                                         <th>  Habitat  </th>
                                     </tr>
                                 </thead>
-                                <tr th:each="emplyee : ${emplyee}">
-                                    <td th:text="${emplyee.name}"></td>
-                                    <td th:text="${emplyee.image}"></td>
-                                    <td th:text="${emplyee.function}"></td>
-                                    <td th:text="${emplyee.animal}"></td>
-                                    <td th:text="${emplyee.habitat}"></td>
+                                <tr th:each="employee : ${employee}">
+                                    <td th:text="${employee.name}"></td>
+                                    <td th:text="${employee.image}"></td>
+                                    <td th:text="${employee.function}"></td>
+                                    <td th:text="${employee.animal}"></td>
+                                    <td th:text="${employee.habitat}"></td>
                                     <td><a th:href="@{/editEmployee/{id}(id=${emplyee.id})}" class="btn btn-primary"><i class="fas fa-user-edit ml-2"></i></a></td>
                                     <td><a th:href="@{/deleteEmployee/{id}(id=${emplyee.id})}" class="btn btn-primary"><i class="fas fa-user-times ml-2"></i></a></td>
                                 </tr>
                             </table>
                         </div>
-                    <p class="my-5"><a href="/signup" class="btn btn-primary"><i class="fas fa-user-plus ml-2"></i></a></p>
-
-
+                    <p class="my-5"><a href="addEmployee.html"  class="btn btn-primary"><i class="fas fa-user-plus ml-2"></i></a></p
                 </div>
             </div>
         </div>

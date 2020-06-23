@@ -9,10 +9,10 @@ import java.util.List;
 public class Satisfaction {
 
     public static int calculate(Animal animalQueQuerSaberASatisfacao) {
-        return 20 + igual(animalQueQuerSaberASatisfacao) - diferente(animalQueQuerSaberASatisfacao) + espaco(animalQueQuerSaberASatisfacao);
+        return 20 + equal(animalQueQuerSaberASatisfacao) - different(animalQueQuerSaberASatisfacao) + space(animalQueQuerSaberASatisfacao);
     }
 
-    private static int igual(Animal animalQueQuerSaberQuantosAnimaisIguais)
+    private static int equal(Animal animalQueQuerSaberQuantosAnimaisIguais)
     {
         Habitat habitatDoAnimalQueQuerSaberIguais = animalQueQuerSaberQuantosAnimaisIguais.getHabitat();
         List<Animal> animaisDoMesmoHabitat = habitatDoAnimalQueQuerSaberIguais.getAnimal();
@@ -31,7 +31,7 @@ public class Satisfaction {
         return 3 * contadorDeAnimaisDaMesmaEspecie;
     }
 
-    private static int diferente(Animal animalQueQuerSaberDiferentes) {
+    private static int different(Animal animalQueQuerSaberDiferentes) {
         String especieDoAnimalOriginal = animalQueQuerSaberDiferentes.getSpecie();
         Habitat habitatDoAnimalOriginal = animalQueQuerSaberDiferentes.getHabitat();
 
@@ -51,7 +51,7 @@ public class Satisfaction {
         return 2 * contadorDeAnimaisDiferentes;
     }
 
-    private static int espaco(Animal animalQueMoraNoHabitat) {
+    private static int space(Animal animalQueMoraNoHabitat) {
         // Saber o número de animais nesse Habitat - População
         // Arredondar (Area / População)
 

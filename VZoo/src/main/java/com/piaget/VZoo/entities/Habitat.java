@@ -16,15 +16,23 @@ public class Habitat {
 
 
     @OneToMany
-
     private List<Animal> animal = new ArrayList<Animal>();
 
-    public void setAnimal(List<Animal> animal) {
-        this.animal = animal;
+    public Habitat() { }
+
+    public Habitat(String name, int area) {
+        this.name = name;
+        this.area = area;
     }
+
     public List<Animal> getAnimal() {
         return animal;
     }
+
+    public void setAnimals(List<Animal> animal) {
+        this.animal = animal;
+    }
+
     public void addAnimal(Animal animal) {
         this.animal.add(animal);
     }

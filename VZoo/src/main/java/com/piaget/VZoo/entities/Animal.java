@@ -27,9 +27,12 @@ public class Animal {
 
     protected Animal() {}
 
-    public Animal(String name, String specie) {
+    public Animal(String name, String specie, char image, String sound, Habitat habitat) {
         this.name = name;
         this.specie = specie;
+        this.image= image;
+        this.sound= sound;
+        this.habitat = (List<Habitat>) habitat;
     }
 
 
@@ -99,8 +102,8 @@ public class Animal {
     @Override
     public String toString() {
         return String.format(
-                "Animal[id=%d, name='%s', specie='%s']",
-                id, name, specie);
+                "Animal[id=%d, name='%s', specie='%s', sound='%s', habitat='%s']",
+                id, name, specie, sound, habitat);
     }
     public void calculateSatisfaction() {
         animalSatisfaction = Satisfaction.calculate(this);

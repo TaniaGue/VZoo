@@ -43,7 +43,7 @@ public class AnimalController {
         this.animalRepository = animalRepository;
     }
 
-    @GetMapping("/signupAnimal")
+    @GetMapping("/createAnimal")
     public String showSignUpForm(Animal animal) {
         return "add-animal";
     }
@@ -51,11 +51,12 @@ public class AnimalController {
     @PostMapping("/addAnimal")
     public String addAnimal(@Valid Animal animal, BindingResult result, Model model) {
         if (result.hasErrors()) {
-            return "add-animal";
+
+            return "createAnimal";
         }
 
         animalRepository.save(animal);
-        model.addAttribute("animals", animalRepository.findAll());
+        model.addAttribute("animal", animalRepository.findAll());
 
         // obter todos os habitat
         List<Habitat> listHabitats = HabitatController.habitatRepository.findAll();

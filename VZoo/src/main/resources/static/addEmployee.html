@@ -25,9 +25,18 @@
         </div>
         <div class="form-group col-md-6">
             <label for="image" class="col-form-label">Image</label>
-            <input type="image" th:field="*{image}" class="form-control" id="image" placeholder="Image">
+            <input type="file" th:field="*{image}" id="image" placeholder="Image">
             <span th:if="${#fields.hasErrors('image')}" th:errors="*{image}" class="text-danger"></span>
         </div>
+
+
+
+
+        // colocar a escolha de vet ou tratador, para activar animal ou habitat correspondente
+        // habitat tem de estar na lista de habitat tal como os animais na dos animais
+
+
+
         <div class="form-group col-md-6">
             <label for="function" class="col-form-label">Function</label>
             <select id = "function" th:field="*{function}" class="form-control" name="function"  placeholder="Function"></select><br>
