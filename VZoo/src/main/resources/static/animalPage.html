@@ -28,16 +28,16 @@
                 </tr>
             </thead>
 
-            <div id="divSearch">
+           <!-- <div id="divSearch">
                 <input type="text" id="txtSearch" placeholder="Search..."/>
                 <img src="search3.png" id="btnSearch" alt="Search"/>
-            </div>
+            </div>-->
 
 
             <tbody>
                 <tr th:each="animal : ${animal}">
                     <td>
-                        <img th:src="@{${'images/' + animal.avatarFileName}}" class="img-thumbnail"></img>
+                     <!--   <img th:src="@{${'images/' + animal.avatarFileName}}" class="img-thumbnail"></img> -->
                     </td>
                     <td th:text="${animal.name}"></td>
                     <td th:text="${animal.image}"></td>

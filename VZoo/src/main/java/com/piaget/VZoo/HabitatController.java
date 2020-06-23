@@ -1,6 +1,7 @@
 
 package com.piaget.VZoo;
 
+import com.piaget.VZoo.entities.Animal;
 import com.piaget.VZoo.entities.Habitat;
 import com.piaget.VZoo.repositories.HabitatRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,17 +28,16 @@ public class HabitatController {
 
 
     @GetMapping("/createHabitat")
-    public String createHabitat(Habitat habitat) {
+    public String showSignUpForm(Habitat habitat) {
         return "add-habitat";
     }
-
 
 
     @GetMapping ("/addHabitat")
     public String addHabitat(@Valid Habitat habitat, BindingResult result, Model model) {
         if (result.hasErrors()) {
 
-            return createHabitat(habitat);
+            return "createHabitat";
         }
 
         habitatRepository.save(habitat);

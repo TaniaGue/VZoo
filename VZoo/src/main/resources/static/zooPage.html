@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="zooPage.css" media="screen" />
@@ -26,13 +26,13 @@
 
             <button onclick="alert()">Click here</button>
 
-            <p id="demo"></p>
+            <p id="satisfaction"></p>
 
             <script>
                 function alert()
                 {
                 var x;
-                var r=confirm(Animal satisfaction);
+                var r=confirm(Animal calculateTotalSatisfaction);
                 if (r==true)
                   {
                   x="Animal Care!";
@@ -41,7 +41,7 @@
                   {
                   x="Ignore!";
                   }
-                document.getElementById("demo").innerHTML=x;
+                document.getElementById("satisfaction").innerHTML=x;
                 }
             </script>
 
