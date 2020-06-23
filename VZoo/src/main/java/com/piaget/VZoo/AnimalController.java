@@ -2,6 +2,7 @@
 package com.piaget.VZoo;
 
 import com.piaget.VZoo.entities.Animal;
+import com.piaget.VZoo.entities.Habitat;
 import com.piaget.VZoo.repositories.AnimalRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import com.piaget.VZoo.entities.Animal;
@@ -22,18 +23,7 @@ import java.util.List;
 @Controller
 public class AnimalController {
 
-    /*@GetMapping("/animalPage")
-    public String animal(Model model)
-    {
-        List<Animal> animals = animalRepository.findAll();
-
-        for (Animal animal : animals) {
-            animal.calculateSatisfaction();
-        }
-        return "animalPage";
-    }*/
-
-
+    public static AnimalRepository animalRepository;
 
         @GetMapping("/animalPage")
         public String animal(Model model)
@@ -47,7 +37,6 @@ public class AnimalController {
         return "animalPage";
     }
 
-    private AnimalRepository animalRepository;
 
     @Autowired
     public AnimalController(AnimalRepository animalRepository){
@@ -69,23 +58,26 @@ public class AnimalController {
         model.addAttribute("animals", animalRepository.findAll());
 
         // obter todos os animais
-        List<Animal> animals = animalRepository.findAll();
+        List<Habitat> habitatsDaBaseDeDados = HabitatController.habitatRepository.findAll();
+        animal.setHabitat(habitatsDaBaseDeDados.get(0));
 
+        List<Animal> animaisDaBaseDeDados = (List<Animal>) animalRepository.findAll();
 
-        // calcular o seu nivel de satisfação
-
-
-        return "animalspage";
-    }
-
-    @GetMapping ("/addAnimal")
-    public String addAnimal(@Valid Animal animal, BindingResult result, Model model) {
-        if (result.hasErrors()) {
-            return "addAnimal";
+        for (Animal animalDaBaseDeDados : animaisDaBaseDeDados) {
+            animalDaBaseDeDados.calculateSatisfaction();
         }
 
+        animal.calculateSatisfaction();
+
         animalRepository.save(animal);
+
+        calculateTotalSatisfaction(model);
+
+        List<Habitat> habitatsPorOndeEsteAnimalPassou = animal.getAllHabitats();
+
+        model.addAttribute("habitatsOndePassou", habitatsPorOndeEsteAnimalPassou);
         model.addAttribute("animals", animalRepository.findAll());
+
         return "animalPage";
     }
 
@@ -97,11 +89,28 @@ public class AnimalController {
         return "animalspage";
     }
 
+    private void calculateTotalSatisfaction(Model model) {
+        List<Animal> animaisDaBaseDeDados = (List<Animal>) animalRepository.findAll();
+
+        int satisfacaoAcumulada = 0;
+
+        for (Animal animalDaBaseDeDados : animaisDaBaseDeDados) {
+            animalDaBaseDeDados.calculateSatisfaction();
+            satisfacaoAcumulada += animalDaBaseDeDados.getAnimalSatisfation();
+
+        }
+
+        int numeroDeAnimais = animaisDaBaseDeDados.size();
+
+        double mediaDaSatisfacao = satisfacaoAcumulada / numeroDeAnimais;
+
+        model.addAttribute("totalSatisfaction", mediaDaSatisfacao);
+    }
 }
 
 
 
 
 
-}
+
 

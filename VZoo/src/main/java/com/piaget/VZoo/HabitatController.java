@@ -22,7 +22,8 @@ import javax.validation.Valid;
 
 @Controller
 public class HabitatController {
-    private HabitatRepository habitatRepository;
+
+    public static HabitatRepository habitatRepository;
 
     @Autowired
     public HabitatController(HabitatRepository repository) {

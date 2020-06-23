@@ -1,9 +1,7 @@
 package com.piaget.VZoo.entities;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -21,6 +19,8 @@ public class Habitat {
         this.area = area;
         this.image = image;
     }
+    @OneToMany
+    private List<Animal> animals = new ArrayList<Animal>();
 
     public long getId() {
         return id;
@@ -62,9 +62,26 @@ public class Habitat {
                 id, name, area, image);
     }
 
- /*   public List<Animal> getAnimal() {
-        return animal;
-    }*/
-}
+
+    public Habitat() { }
+
+    public Habitat(String name, int area) {
+        this.name = name;
+        this.area = area;
+    }
+
+    public List<Animal> getAnimal() {
+        return animals;
+    }
+
+    public void setAnimals(List<Animal> animals) {
+        this.animals = animals;
+    }
+
+    public void addAnimal(Animal animal) {
+        this.animals.add(animal);
+    }
+    }
+
 
 

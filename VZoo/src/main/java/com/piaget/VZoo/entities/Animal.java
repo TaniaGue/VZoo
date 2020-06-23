@@ -1,10 +1,9 @@
 package com.piaget.VZoo.entities;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import com.piaget.VZoo.Satisfation;
 
-
+import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 
 @Entity
@@ -14,30 +13,24 @@ public class Animal {
         @Id
         @GeneratedValue(strategy=GenerationType.AUTO)
         private long id;
-
         private String name;
         private char image;
         private String specie;
         private String sound;
-        private Habitat habitat;
         private int animalSatisfation;
 
-        public Animal(String name, char image, String specie, String sound, Habitat habitat, int animalSatisfation) {
-            this.name = name;
-            this.image = image;
-            this.specie = specie;
-            this.sound = sound;
-            this.habitat = habitat;
-            this.animalSatisfation = animalSatisfation;
-        }
 
 
-        @Override
-        public String toString() {
-            return String.format(
-                    "Animal[id=%d, name='%s', specie='%s']",
-                    id, name, specie);
-        }
+    @OneToMany
+    private List<Habitat> habitat = new ArrayList<>();
+
+    protected Animal() {}
+
+    public Animal(String name, String species) {
+        this.name = name;
+        this.specie = species;
+    }
+
 
         public long getId() {
             return id;
@@ -79,14 +72,15 @@ public class Animal {
             this.sound = sound;
         }
 
+
         public Habitat getHabitat() {
-            return habitat;
-        }
+            return this.habitat.get(this.habitat.size() - 1);
+         }
 
-        public void setHabitat(Habitat habitat) {
-            this.habitat = habitat;
+         public void setHabitat(Habitat habitat) {
+            this.habitat.add(habitat);
+            habitat.addAnimal(this);
         }
-
 
         public int getAnimalSatisfation() {
             return animalSatisfation;
@@ -95,4 +89,19 @@ public class Animal {
         public void setAnimalSatisfation(int animalSatisfation) {
             this.animalSatisfation = animalSatisfation;
         }
+
+
+     public List<Habitat> getAllHabitats() {
+    return (List<Habitat>) this.habitat;
+}
+
+    @Override
+    public String toString() {
+        return String.format(
+                "Animal[id=%d, name='%s', specie='%s']",
+                id, name, specie);
+    }
+    public void calculateSatisfaction() {
+        animalSatisfation = Satisfation.calculate(this);
+    }
 }
