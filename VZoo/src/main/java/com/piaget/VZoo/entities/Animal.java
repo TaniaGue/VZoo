@@ -27,9 +27,9 @@ public class Animal {
 
     protected Animal() {}
 
-    public Animal(String name, String species) {
+    public Animal(String name, String specie) {
         this.name = name;
-        this.specie = species;
+        this.specie = specie;
     }
 
 

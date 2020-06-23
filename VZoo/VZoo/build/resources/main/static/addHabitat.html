@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>New Habitat</h2>
+
+<form action="#" th:action="@{/addHabitat}" th:object="${habitat}" method="post">
+
+    </div>
+
+    <h2>Enter habitat data</h2>
+
+    <div class="field">
+        <div class="form-group col-md-6">
+            <label for="name" class="col-form-label">Name</label>
+            <input type="text" th:field="*{name}" class="form-control" id="name" placeholder="Name">
+            <span th:if="${#fields.hasErrors('name')}" th:errors="*{name}" class="text-danger"></span>
+        </div>
+        <div class="form-group col-md-6">
+            <label for="image" class="col-form-label">Image</label>
+            <input type="file" th:field="*{image}" id="image" placeholder="Image">
+        </div>
+        <div class="form-group col-md-6">
+            <label for="area" class="col-form-label">Area</label>
+            <input type="text" th:field="*{area}" class="form-control" name="area"  placeholder="Area" /><br>
+            <span th:if="${#fields.hasErrors('area')}" th:errors="*{area}" class="text-danger"></span>
+        </div>
+
+
+    <div class="row">
+        <div class="col-md-6 mt-5">
+            <input type="submit" class="btn btn-primary" value="Add Habitat" href="animalPage.html">
+        </div>
+    </div>
+    </div>
+</form>
+</body>
+</html>
