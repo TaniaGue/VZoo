@@ -1,5 +1,6 @@
 package com.piaget.VZoo.entities;
-import com.piaget.VZoo.Satisfation;
+import com.piaget.VZoo.Satisfaction;
+import com.piaget.VZoo.Satisfaction;
 
 import javax.persistence.*;
 import java.util.ArrayList;
@@ -17,7 +18,7 @@ public class Animal {
         private char image;
         private String specie;
         private String sound;
-        private int animalSatisfation;
+        private int animalSatisfaction;
 
 
 
@@ -82,12 +83,12 @@ public class Animal {
             habitat.addAnimal(this);
         }
 
-        public int getAnimalSatisfation() {
-            return animalSatisfation;
+        public int getAnimalSatisfaction() {
+            return getAnimalSatisfaction();
         }
 
-        public void setAnimalSatisfation(int animalSatisfation) {
-            this.animalSatisfation = animalSatisfation;
+        public void setAnimalSatisfaction(int animalSatisfaction) {
+            this.animalSatisfaction = animalSatisfaction;
         }
 
 
@@ -102,6 +103,6 @@ public class Animal {
                 id, name, specie);
     }
     public void calculateSatisfaction() {
-        animalSatisfation = Satisfation.calculate(this);
+        animalSatisfaction = Satisfaction.calculate(this);
     }
 }

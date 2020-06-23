@@ -1,7 +1,7 @@
 package com.piaget.VZoo;
 
-public class MainPage {
 
+public class MainPage {
     private String name;
 
     public String getName(){
@@ -11,4 +11,5 @@ public class MainPage {
     public void setName(String name) {
         this.name = name;
     }
+
 }

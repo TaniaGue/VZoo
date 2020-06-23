@@ -40,10 +40,6 @@ public class HabitatController {
 
     @GetMapping ("/addHabitat")
     public String addHabitat(@Valid Habitat habitat, BindingResult result, Model model) {
-        if (result.hasErrors()) {
-            return "addHabitat";
-        }
-
         habitatRepository.save(habitat);
         model.addAttribute("habitat", habitatRepository.findAll());
         return "habitatPage";
@@ -75,6 +71,16 @@ public class HabitatController {
         model.addAttribute("habitat", habitatRepository.findAll());
         return "habitatPage";
     }
+    @GetMapping("/habitatPage")
+    public String habitats(Model model)
+    {
+        return "habitatPage";
+    }
 
+    @PostMapping("/habitatPage")
+    public String goToHabitats(Model model)
+    {
+        return "habitatPage";
+    }
 
 }

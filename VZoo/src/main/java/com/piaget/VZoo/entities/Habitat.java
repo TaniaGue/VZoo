@@ -7,20 +7,28 @@ import java.util.List;
 @Entity
 public class Habitat {
     @Id
-    @GeneratedValue(strategy=GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
 
     private String name;
     private int area;
     private char image;
 
-    public Habitat(String name, int area, char image) {
-        this.name = name;
-        this.area = area;
-        this.image = image;
-    }
+
     @OneToMany
-    private List<Animal> animals = new ArrayList<Animal>();
+
+    private List<Animal> animal = new ArrayList<Animal>();
+
+    public void setAnimal(List<Animal> animal) {
+        this.animal = animal;
+    }
+    public List<Animal> getAnimal() {
+        return animal;
+    }
+    public void addAnimal(Animal animal) {
+        this.animal.add(animal);
+    }
+
 
     public long getId() {
         return id;
@@ -54,34 +62,4 @@ public class Habitat {
         this.image = image;
     }
 
-
-    @Override
-    public String toString() {
-        return String.format(
-                "Habitat[id=%d, name='%s', area='%s', image='%s']",
-                id, name, area, image);
-    }
-
-
-    public Habitat() { }
-
-    public Habitat(String name, int area) {
-        this.name = name;
-        this.area = area;
-    }
-
-    public List<Animal> getAnimal() {
-        return animals;
-    }
-
-    public void setAnimals(List<Animal> animals) {
-        this.animals = animals;
-    }
-
-    public void addAnimal(Animal animal) {
-        this.animals.add(animal);
-    }
-    }
-
-
-
+}

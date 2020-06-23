@@ -12,12 +12,12 @@ public class MainController {
 
 	@GetMapping("/zooPage")
 	public String novo (Model model){
-		model.addAttribute("zooPage", new MainPage());
+		model.addAttribute("zooPage", new ZooApp());
 		return "zooPage";
 	}
 
 	@PostMapping("/zooPage")
-	public String gotoMainPage(@ModelAttribute MainPage zooPage){
+	public String gotoMainPage(@ModelAttribute ZooApp zooPage){
 		return "zooPage";
 	}
 

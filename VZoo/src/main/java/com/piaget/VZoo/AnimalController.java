@@ -96,7 +96,7 @@ public class AnimalController {
 
         for (Animal animalDaBaseDeDados : animaisDaBaseDeDados) {
             animalDaBaseDeDados.calculateSatisfaction();
-            satisfacaoAcumulada += animalDaBaseDeDados.getAnimalSatisfation();
+            satisfacaoAcumulada += animalDaBaseDeDados.getAnimalSatisfaction();
 
         }
 

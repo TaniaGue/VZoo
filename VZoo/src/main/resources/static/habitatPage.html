@@ -5,6 +5,11 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="employeePage.css" media="screen" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/shards.min.css">
+
     <title>Habitat</title>
 </head>
 <body>
@@ -24,23 +29,29 @@
                         <th>  Image  </th>
                         <th>  Area (m2)  </th>
                     </tr>
+
+                    <div id="divSearch">
+                        <input type="text" id="txtSearch" placeholder="Search..."/>
+                        <img src="search3.png" id="btnSearch" alt="Search"/>
+                    </div>
+
                     </thead>
-                    <tr th:each="habitat : ${habitat}">
+
+                    <tbody>
+                        </td>
                         <td th:text="${habitat.name}"></td>
                         <td th:text="${habitat.image}"></td>
                         <td th:text="${habitat.area}"></td>
-                        <td><a th:href="@{/editHabitat/{id}(id=${habitat.id})}" class="btn btn-primary"><i class="fas fa-user-edit ml-2"></i></a></td>
-                        <td><a th:href="@{/deleteHabitat/{id}(id=${habitat.id})}" class="btn btn-primary"><i class="fas fa-user-times ml-2"></i></a></td>
+                        <td><a th:href="@{/edit/{id}(id=${habitat.id})}" class="btn btn-primary"><i class="fas fa-user-edit ml-2"></i></a></td>
+                        <td><a th:href="@{/delete/{id}(id=${habitat.id})}" class="btn btn-primary"><i class="fas fa-user-times ml-2"></i></a></td>
                     </tr>
+                    </tbody>
                 </table>
             </div>
-            <p class="my-5"><a href="/signup" class="btn btn-primary"><i class="fas fa-user-plus ml-2"></i></a></p>
+            <p class="my-5"><a href="addHabitat.html"  class="btn btn-primary"><i class="fas fa-user-plus ml-2"></i></a></p>
         </div>
     </div>
 </div>
-<div id="divSearch">
-    <input type="text" id="txtSearch" placeholder="Search..."/>
-    <img src="search3.png" id="btnSearch" alt="Search"/>
-</div>
+
 </body>
 </html>
