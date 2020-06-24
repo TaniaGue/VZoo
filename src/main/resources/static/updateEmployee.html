@@ -26,7 +26,7 @@
     <div class="container">
         <h1 class="my-5">New employee</h1>
         <div class="card border-0 shadow">
-            <form class="card-body" action="#" th:action="@{/addEmployee}" th:object="${employee}" method="post">
+            <div class="card-body">
 
                 <div class="form-group">
                     <label for="name">Name</label>
@@ -47,10 +47,7 @@
 
                 <div class="form-group">
                     <label for="function">Function</label>
-                    <select id="function" th:field="*{function}" class="form-control" name="function"  placeholder="Function">
-                        <option value="vet">Vet</option>
-                        <option value="keeper">Keeper</option>
-                    </select>
+                    <input type="text" th:field="*{function}" class="form-control" name="function" id="function" placeholder="Function" /><br>
                     <span th:if="${#fields.hasErrors('function')}" th:errors="*{function}" class="text-danger"></span>
                 </div>
 
@@ -71,22 +68,9 @@
                     <a href="employeePage.html" class="btn btn-secondary mr-2">Cancel</a>
                     <button type="submit" class="btn btn-success" value="Add Animal" href="animalPage.html">Submit</button>
                 </div>
-            </form>
+            </div>
         </div>
+
     </div>
-
-
-    <script>
-        switch (function) {
-            case Vet:
-                text.habitat=true;
-                animal= Animal AnimalRepository;
-                break;
-            case Keeper:
-                enable= Animal
-                habitat= Habitat HabitatAnimal;
-            break;
-        }
-    </script>
 </body>
 </html>
