@@ -7,66 +7,81 @@
     <title>VZoo - Employee List</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 </head>
-<body class="bg-light container">
+<body class="bg-light">
+    <nav class="navbar navbar-dark bg-dark navbar-expand">
+        <div class="container">
+            <a class="navbar-brand" href="zooPage.html">VZoo</a>
 
-    <h1 class="my-5">Employee list</h1>
+            <div class="collapse navbar-collapse" id="navbar">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="zooPage.html">Home</a>
+                    <a class="nav-item nav-link" href="animalPage.html">Animals</a>
+                    <a class="nav-item nav-link active" href="employeePage.html">Employee</a>
+                    <a class="nav-item nav-link" href="habitatPage.html">Habitat</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <h1 class="my-5">Employee list</h1>
 
-    <div class="card border-0 shadow" th:switch="${Emplyee}" >
+        <div class="card border-0 shadow" th:switch="${Emplyee}" >
 
-        <div class="card-body">
+            <div class="card-body">
 
-            <div class="row">
-                <div class="col">
-                    <div class="input-group input-group-sm">
-                        <input type="text" class="form-control" placeholder="Search for an employee">
-                        <div class="input-group-append">
-                            <button class="btn btn-secondary" type="button">Search</button>
+                <div class="row">
+                    <div class="col">
+                        <div class="input-group input-group-sm">
+                            <input type="text" class="form-control" placeholder="Search for an employee">
+                            <div class="input-group-append">
+                                <button class="btn btn-secondary" type="button">Search</button>
+                            </div>
                         </div>
+                    </div>
+
+                    <div class="col-auto">
+                        <a href="addEmployee.html" class="btn btn-success btn-sm">New employee</a>
                     </div>
                 </div>
 
-                <div class="col-auto">
-                    <a href="addEmployee.html" class="btn btn-success btn-sm">New employee</a>
-                </div>
+                <table class="table mt-4">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Image</th>
+                            <th>Specie</th>
+                            <th>Sound</th>
+                            <th>Habitat</th>
+                            <!--<th>Animal Satisfation</th>-->
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+
+                    <tbody th:case="null">
+                        <tr>
+                            <td class="text-muted" colspan="6">No employees created yet.</td>
+                        </tr>
+                    </tbody>
+
+                    <tbody th:case="*">
+                        <tr th:each="emplyee : ${emplyee}">
+                            <th>
+                                <a th:href="@{/editEmployee/{id}(id=${emplyee.id})}" th:text="${emplyee.name}"></a>
+                            </th>
+                            <td th:text="${emplyee.image}"></td>
+                            <td th:text="${emplyee.function}"></td>
+                            <td th:text="${emplyee.animal}"></td>
+                            <td th:text="${emplyee.habitat}"></td>
+                            <td>
+                                <a th:href="@{/deleteEmployee/{id}(id=${emplyee.id})}" class="btn btn-danger text-white btn-sm">
+                                    Delete
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+
+                </table>
             </div>
-
-            <table class="table mt-4">
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Image</th>
-                        <th>Specie</th>
-                        <th>Sound</th>
-                        <th>Habitat</th>
-                        <!--<th>Animal Satisfation</th>-->
-                        <th>Actions</th>
-                    </tr>
-                </thead>
-
-                <tbody th:case="null">
-                    <tr>
-                        <td class="text-muted" colspan="6">No employees created yet.</td>
-                    </tr>
-                </tbody>
-
-                <tbody th:case="*">
-                    <tr th:each="emplyee : ${emplyee}">
-                        <th>
-                            <a th:href="@{/editEmployee/{id}(id=${emplyee.id})}" th:text="${emplyee.name}"></a>
-                        </th>
-                        <td th:text="${emplyee.image}"></td>
-                        <td th:text="${emplyee.function}"></td>
-                        <td th:text="${emplyee.animal}"></td>
-                        <td th:text="${emplyee.habitat}"></td>
-                        <td>
-                            <a th:href="@{/deleteEmployee/{id}(id=${emplyee.id})}" class="btn btn-danger text-white btn-sm">
-                                Delete
-                            </a>
-                        </td>
-                    </tr>
-                </tbody>
-
-            </table>
         </div>
     </div>
 </body>
