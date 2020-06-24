@@ -2,38 +2,45 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>VZoo - Add Habitat</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 </head>
-<body>
-<h2>New Habitat</h2>
-
-<form action="#" th:action="@{/addHabitat}" th:object="${habitat}" method="post">
-
-    </div>
-
-    <h2>Enter habitat data</h2>
-
-    <div class="field">
-        <div class="form-group col-md-6">
-            <label for="name" class="col-form-label">Name</label>
-            <input type="text" th:field="*{name}" class="form-control" id="name" placeholder="Name">
-            <span th:if="${#fields.hasErrors('name')}" th:errors="*{name}" class="text-danger"></span>
-        </div>
-        <div class="form-group col-md-6">
-            <label for="image" class="col-form-label">Image</label>
-            <input type="file" th:field="*{image}" id="image" placeholder="Image">
-        </div>
-        <div class="form-group col-md-6">
-            <label for="area" class="col-form-label">Area</label>
-            <input type="text" th:field="*{area}" class="form-control" name="area"  placeholder="Area" /><br>
-            <span th:if="${#fields.hasErrors('area')}" th:errors="*{area}" class="text-danger"></span>
-        </div>
+<body class="container bg-light">
 
 
-    <div class="row">
-        <div class="col-md-6 mt-5">
-            <input type="submit" class="btn btn-primary" value="Add Habitat" href="animalPage.html">
-        </div>
+    <h1 class="my-5">New Habitat</h1>
+
+    <div class="card border-0 shadow">
+        <form class="card-body" action="#" th:action="@{/addHabitat}" th:object="${habitat}" method="post">
+
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" th:field="*{name}" class="form-control" id="name" placeholder="Name">
+                <span th:if="${#fields.hasErrors('name')}" th:errors="*{name}" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="inputGroupFile01">Image</label>
+                <div class="input-group mb-3">
+                    <div class="custom-file">
+                        <input type="file" th:field="*{image}" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+                        <label class="custom-file-label" for="inputGroupFile01">Choose image</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="area">Area</label>
+                <input type="text" th:field="*{area}" class="form-control" name="area" id="area" placeholder="Area" /><br>
+                <span th:if="${#fields.hasErrors('area')}" th:errors="*{area}" class="text-danger"></span>
+            </div>
+
+
+
+            <div class="text-right">
+                <a href="habitatPage.html" class="btn btn-secondary mr-2">Cancel</a>
+                <button type="submit" class="btn btn-success" value="Add Habitat" href="habitatPage.html">Submit</button>
+            </div>
     </div>
 </form>
 </body>
