@@ -1,7 +1,135 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="76ed5c28-a76f-4d56-aaad-97d15b2bd956" name="Default Changelist" comment="" />
+    <list default="true" id="76ed5c28-a76f-4d56-aaad-97d15b2bd956" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/VZoo.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/HELP.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/VZoo/build/classes/java/main/com/piaget/VZoo/AnimalController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/VZoo/build/classes/java/main/com/piaget/VZoo/AnimalPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/VZoo/build/classes/java/main/com/piaget/VZoo/EmployeeController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/VZoo/build/classes/java/main/com/piaget/VZoo/EmployeePage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/VZoo/build/classes/java/main/com/piaget/VZoo/HabitatController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/VZoo/build/classes/java/main/com/piaget/VZoo/HabitatPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/VZoo/build/classes/java/main/com/piaget/VZoo/MainController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/VZoo/build/classes/java/main/com/piaget/VZoo/MainPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/VZoo/build/classes/java/main/com/piaget/VZoo/Satisfation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/VZoo/build/classes/java/main/com/piaget/VZoo/Vet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/VZoo/build/classes/java/main/com/piaget/VZoo/ZooApp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/VZoo/build/classes/java/main/com/piaget/VZoo/entities/Animal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/VZoo/build/classes/java/main/com/piaget/VZoo/entities/Employee.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/VZoo/build/classes/java/main/com/piaget/VZoo/entities/Habitat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/VZoo/build/classes/java/main/com/piaget/VZoo/repositories/AnimalRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/VZoo/build/classes/java/main/com/piaget/VZoo/repositories/EmployeeRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/VZoo/build/classes/java/main/com/piaget/VZoo/repositories/HabitatRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/VZoo/build/classes/java/test/com/piaget/VZoo/VZooControllerTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/VZoo/build/resources/main/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/VZoo/build/resources/main/static/addAnimal.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/VZoo/build/resources/main/static/addEmployee.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/VZoo/build/resources/main/static/addHabitat.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/VZoo/build/resources/main/static/animalPage.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/VZoo/build/resources/main/static/animalPage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/VZoo/build/resources/main/static/employeePage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/VZoo/build/resources/main/static/habitatPage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/VZoo/build/resources/main/static/zooPage.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/VZoo/build/resources/main/static/zooPage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/VZoo/src/main/java/com/piaget/VZoo/AnimalPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/VZoo/src/main/java/com/piaget/VZoo/HabitatController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/VZoo/src/main/java/com/piaget/VZoo/Satisfaction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/build/classes/java/main/com/piaget/VZoo/AnimalController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/build/classes/java/main/com/piaget/VZoo/AnimalPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/build/classes/java/main/com/piaget/VZoo/EmployeeController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/build/classes/java/main/com/piaget/VZoo/EmployeePage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/build/classes/java/main/com/piaget/VZoo/HabitatController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/build/classes/java/main/com/piaget/VZoo/HabitatPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/build/classes/java/main/com/piaget/VZoo/MainController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/build/classes/java/main/com/piaget/VZoo/MainPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/build/classes/java/main/com/piaget/VZoo/Satisfaction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/build/classes/java/main/com/piaget/VZoo/Satisfation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/build/classes/java/main/com/piaget/VZoo/Vet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/build/classes/java/main/com/piaget/VZoo/ZooApp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/build/classes/java/main/com/piaget/VZoo/entities/Animal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/build/classes/java/main/com/piaget/VZoo/entities/Employee.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/build/classes/java/main/com/piaget/VZoo/entities/Habitat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/build/classes/java/main/com/piaget/VZoo/repositories/AnimalRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/build/classes/java/main/com/piaget/VZoo/repositories/EmployeeRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/build/classes/java/main/com/piaget/VZoo/repositories/HabitatRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/build/classes/java/test/com/piaget/VZoo/VZooControllerTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/build/resources/main/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/build/resources/main/static/addAnimal.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/build/resources/main/static/addEmployee.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/build/resources/main/static/addHabitat.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/build/resources/main/static/animalPage.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/build/resources/main/static/animalPage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/build/resources/main/static/employeePage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/build/resources/main/static/habitatPage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/build/resources/main/static/zooPage.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/build/resources/main/static/zooPage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/src/main/java/com/piaget/VZoo/AnimalController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/src/main/java/com/piaget/VZoo/AnimalKeeperPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/src/main/java/com/piaget/VZoo/AnimalManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/src/main/java/com/piaget/VZoo/AnimalPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/src/main/java/com/piaget/VZoo/EmployeeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/src/main/java/com/piaget/VZoo/EmployeeManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/src/main/java/com/piaget/VZoo/EmployeePage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/src/main/java/com/piaget/VZoo/HabitatController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/src/main/java/com/piaget/VZoo/HabitatManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/src/main/java/com/piaget/VZoo/HabitatPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/src/main/java/com/piaget/VZoo/MainController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/src/main/java/com/piaget/VZoo/MainPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/src/main/java/com/piaget/VZoo/Satisfaction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/src/main/java/com/piaget/VZoo/Satisfation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/src/main/java/com/piaget/VZoo/Vet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/src/main/java/com/piaget/VZoo/ZooApp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/src/main/java/com/piaget/VZoo/entities/Animal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/src/main/java/com/piaget/VZoo/entities/Animal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/src/main/java/com/piaget/VZoo/entities/Employee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/src/main/java/com/piaget/VZoo/entities/Habitat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/src/main/java/com/piaget/VZoo/repositories/AnimalRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/src/main/java/com/piaget/VZoo/repositories/EmployeeRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/src/main/java/com/piaget/VZoo/repositories/HabitatRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/src/main/resources/static/addAnimal.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/src/main/resources/static/addEmployee.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/src/main/resources/static/addHabitat.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/src/main/resources/static/animalPage.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/src/main/resources/static/animalPage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/src/main/resources/static/employeePage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/src/main/resources/static/habitatPage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/src/main/resources/static/updateAnimal.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/src/main/resources/static/updateEmployee.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/src/main/resources/static/updateHabitat.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/src/main/resources/static/zooPage.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/src/main/resources/static/zooPage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VZoo/src/test/java/com/piaget/VZoo/VZooControllerTests.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,9 +155,6 @@
       </state>
     </system>
   </component>
-  <component name="FavoritesManager">
-    <favorites_list name="VZoo" />
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -52,27 +177,18 @@
   <component name="ProjectId" id="1bopdfMhnDPToXpeAcxpeQ89170" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../SpringDemo-master" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
     <property name="show.unlinked.gradle.project.popup" value="true" />
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -84,8 +200,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1589308389559</updated>
+      <workItem from="1593004264252" duration="81000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="352" y="2" key="#animalPage.xsl" timestamp="1590520746356">
@@ -118,10 +250,11 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="463" y="138" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1591119838784" />
-    <state x="184" y="26" key="SettingsEditor" timestamp="1590520880885">
-      <screen x="0" y="0" width="1366" height="768" />
+    <state x="226" y="34" key="SettingsEditor" timestamp="1593004351690">
+      <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="184" y="26" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1590520880885" />
+    <state x="226" y="34" key="SettingsEditor/1680.-25.1536.832/0.0.1680.1010@0.0.1680.1010" timestamp="1593004351690" />
     <state x="108" y="207" key="com.intellij.ide.util.TipDialog" timestamp="1591119271380">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
