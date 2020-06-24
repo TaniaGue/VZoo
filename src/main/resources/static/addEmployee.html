@@ -47,20 +47,21 @@
 
                 <div class="form-group">
                     <label for="function">Function</label>
-                    <select id="function" th:field="*{function}" class="form-control" name="function"  placeholder="Function">
+                    <select id="function" th:field="*{function}" class="form-control" name="function"  placeholder="Function" onchange="changeFunction(this)">
+                        <option value="0" selected disabled>Select a function</option>
                         <option value="vet">Vet</option>
                         <option value="keeper">Keeper</option>
                     </select>
                     <span th:if="${#fields.hasErrors('function')}" th:errors="*{function}" class="text-danger"></span>
                 </div>
 
-                <div class="form-group">
+                <div class="form-group d-none" id="animal-container">
                     <label for="animal">Animal</label>
                     <input type="text" th:field="*{animal}" class="form-control" name="animal" id="animal" placeholder="Animal" /><br>
                     <span th:if="${#fields.hasErrors('animal')}" th:errors="*{animal}" class="text-danger"></span>
                 </div>
 
-                <div class="form-group">
+                <div class="form-group d-none" id="habitat-container">
                     <label for="habitat">Habitat</label>
                     <input type="text" th:field="*{habitat}" class="form-control" name="habitat" id="habitat" placeholder="Habitat" /><br>
                     <span th:if="${#fields.hasErrors('habitat')}" th:errors="*{habitat}" class="text-danger"></span>
@@ -77,15 +78,19 @@
 
 
     <script>
-        switch (function) {
-            case Vet:
-                text.habitat=true;
-                animal= Animal AnimalRepository;
-                break;
-            case Keeper:
-                enable= Animal
-                habitat= Habitat HabitatAnimal;
-            break;
+        function changeFunction(el) {
+
+            switch (el.value) {
+                case "vet":
+                    document.getElementById('animal-container').classList.add('d-none');
+                    document.getElementById('habitat-container').classList.remove('d-none');
+                    break;
+                case "keeper":
+                    document.getElementById('habitat-container').classList.add('d-none');
+                    document.getElementById('animal-container').classList.remove('d-none');
+                    break;
+            }
+
         }
     </script>
 </body>
