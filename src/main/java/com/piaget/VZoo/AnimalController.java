@@ -25,13 +25,13 @@ public class AnimalController {
 
     public static AnimalRepository animalRepository;
 
-        @GetMapping("/animalPage")
-        public String animal(Model model)
-        {
-            return "animalPage";
-        }
+    @GetMapping("/animalPage")
+    public String animal(Model model)
+    {
+        return "animalPage";
+    }
 
-        @PostMapping("/animalPage")
+    @PostMapping("/animalPage")
     public String goToAnimal(Model model)
     {
         return "animalPage";
@@ -43,7 +43,7 @@ public class AnimalController {
         this.animalRepository = animalRepository;
     }
 
-    @GetMapping("/signupAnimal")
+    @GetMapping("/createAnimal")
     public String showSignUpForm(Animal animal) {
         return "add-animal";
     }
@@ -51,20 +51,21 @@ public class AnimalController {
     @PostMapping("/addAnimal")
     public String addAnimal(@Valid Animal animal, BindingResult result, Model model) {
         if (result.hasErrors()) {
-            return "add-animal";
+
+            return "createAnimal";
         }
 
         animalRepository.save(animal);
-        model.addAttribute("animals", animalRepository.findAll());
+        model.addAttribute("animal", animalRepository.findAll());
 
-        // obter todos os animais
-        List<Habitat> habitatsDaBaseDeDados = HabitatController.habitatRepository.findAll();
-        animal.setHabitat(habitatsDaBaseDeDados.get(0));
+        // obter todos os habitat
+        List<Habitat> listHabitats = HabitatController.habitatRepository.findAll();
+        animal.setHabitat(listHabitats.get(0));
 
-        List<Animal> animaisDaBaseDeDados = (List<Animal>) animalRepository.findAll();
+        List<Animal> listAnimals = (List<Animal>) animalRepository.findAll();
 
-        for (Animal animalDaBaseDeDados : animaisDaBaseDeDados) {
-            animalDaBaseDeDados.calculateSatisfaction();
+        for (Animal listAnimal : listAnimals) {
+            listAnimal.calculateSatisfaction();
         }
 
         animal.calculateSatisfaction();
@@ -73,46 +74,37 @@ public class AnimalController {
 
         calculateTotalSatisfaction(model);
 
-        List<Habitat> habitatsPorOndeEsteAnimalPassou = animal.getAllHabitats();
+        List<Habitat> habitatsAnimalPassed = animal.getAllHabitats();
 
-        model.addAttribute("habitatsOndePassou", habitatsPorOndeEsteAnimalPassou);
+        model.addAttribute("habitatsAnimalPassed", habitatsAnimalPassed);
         model.addAttribute("animals", animalRepository.findAll());
 
         return "animalPage";
     }
-
-
 
     @GetMapping("/deleteAnimal/{id}")
     public String deleteAnimal(@PathVariable("id") long id, Model model) {
         Animal animal = animalRepository.findById(id);
         animalRepository.delete(animal);
         model.addAttribute("animals", animalRepository.findAll());
-        return "animalspage";
+        return "animalPage";
     }
 
     private void calculateTotalSatisfaction(Model model) {
-        List<Animal> animaisDaBaseDeDados = (List<Animal>) animalRepository.findAll();
+        List<Animal> listAnimals = (List<Animal>) animalRepository.findAll();
 
-        int satisfacaoAcumulada = 0;
+        int accumulatedSatisfaction = 0;
 
-        for (Animal animalDaBaseDeDados : animaisDaBaseDeDados) {
-            animalDaBaseDeDados.calculateSatisfaction();
-            satisfacaoAcumulada += animalDaBaseDeDados.getAnimalSatisfation();
+        for (Animal listAnimal : listAnimals) {
+            listAnimal.calculateSatisfaction();
+            accumulatedSatisfaction += listAnimal.getAnimalSatisfaction();
 
         }
 
-        int numeroDeAnimais = animaisDaBaseDeDados.size();
+        int allAnimals = listAnimals.size();
 
-        double mediaDaSatisfacao = satisfacaoAcumulada / numeroDeAnimais;
+        double satisfactionMedia = accumulatedSatisfaction / allAnimals;
 
-        model.addAttribute("totalSatisfaction", mediaDaSatisfacao);
+        model.addAttribute("totalSatisfaction", satisfactionMedia);
     }
 }
-
-
-
-
-
-
-

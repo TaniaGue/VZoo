@@ -1,25 +1,42 @@
 package com.piaget.VZoo.entities;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 public class Habitat {
     @Id
-    @GeneratedValue(strategy=GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
 
     private String name;
     private int area;
     private char image;
 
-    public Habitat(String name, int area, char image) {
+
+    @OneToMany
+    private List<Animal> animal = new ArrayList<Animal>();
+
+    public Habitat() { }
+
+    public Habitat(String name, int area) {
         this.name = name;
         this.area = area;
-        this.image = image;
     }
+
+    public List<Animal> getAnimal() {
+        return animal;
+    }
+
+    public void setAnimals(List<Animal> animal) {
+        this.animal = animal;
+    }
+
+    public void addAnimal(Animal animal) {
+        this.animal.add(animal);
+    }
+
 
     public long getId() {
         return id;
@@ -53,13 +70,5 @@ public class Habitat {
         this.image = image;
     }
 
-
-    @Override
-    public String toString() {
-        return String.format(
-                "Habitat[id=%d, name='%s', area='%s', image='%s']",
-                id, name, area, image);
-    }
 }
-
 

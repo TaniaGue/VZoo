@@ -1,5 +1,6 @@
 package com.piaget.VZoo.entities;
-import com.piaget.VZoo.Satisfation;
+
+import com.piaget.VZoo.Satisfaction;
 
 import javax.persistence.*;
 import java.util.ArrayList;
@@ -10,14 +11,14 @@ import java.util.List;
 public class Animal {
 
 
-        @Id
-        @GeneratedValue(strategy=GenerationType.AUTO)
-        private long id;
-        private String name;
-        private char image;
-        private String specie;
-        private String sound;
-        private int animalSatisfation;
+    @Id
+    @GeneratedValue(strategy=GenerationType.AUTO)
+    private long id;
+    private String name;
+    private char image;
+    private String specie;
+    private String sound;
+    private int animalSatisfaction;
 
 
 
@@ -26,82 +27,85 @@ public class Animal {
 
     protected Animal() {}
 
-    public Animal(String name, String species) {
+    public Animal(String name, String specie, char image, String sound, Habitat habitat) {
         this.name = name;
-        this.specie = species;
+        this.specie = specie;
+        this.image= image;
+        this.sound= sound;
+        this.habitat = (List<Habitat>) habitat;
     }
 
 
-        public long getId() {
-            return id;
-        }
+    public long getId() {
+        return id;
+    }
 
-        public void setId(long id) {
-            this.id = id;
-        }
+    public void setId(long id) {
+        this.id = id;
+    }
 
-        public String getName() {
-            return name;
-        }
+    public String getName() {
+        return name;
+    }
 
-        public void setName(String name) {
-            this.name = name;
-        }
+    public void setName(String name) {
+        this.name = name;
+    }
 
-        public char getImage() {
-            return image;
-        }
+    public char getImage() {
+        return image;
+    }
 
-        public void setImage(char image) {
-            this.image = image;
-        }
+    public void setImage(char image) {
+        this.image = image;
+    }
 
-        public String getSpecie() {
-            return specie;
-        }
+    public String getSpecie() {
+        return specie;
+    }
 
-        public void setSpecie(String specie) {
-            this.specie = specie;
-        }
+    public void setSpecie(String specie) {
+        this.specie = specie;
+    }
 
-        public String getSound() {
-            return sound;
-        }
+    public String getSound() {
+        return sound;
+    }
 
-        public void setSound(String sound) {
-            this.sound = sound;
-        }
-
-
-        public Habitat getHabitat() {
-            return this.habitat.get(this.habitat.size() - 1);
-         }
-
-         public void setHabitat(Habitat habitat) {
-            this.habitat.add(habitat);
-            habitat.addAnimal(this);
-        }
-
-        public int getAnimalSatisfation() {
-            return animalSatisfation;
-        }
-
-        public void setAnimalSatisfation(int animalSatisfation) {
-            this.animalSatisfation = animalSatisfation;
-        }
+    public void setSound(String sound) {
+        this.sound = sound;
+    }
 
 
-     public List<Habitat> getAllHabitats() {
-    return (List<Habitat>) this.habitat;
-}
+    public Habitat getHabitat() {
+        return this.habitat.get(this.habitat.size() - 1);
+    }
+
+    public void setHabitat(Habitat habitat) {
+        this.habitat.add(habitat);
+        habitat.addAnimal(this);
+    }
+
+    public int getAnimalSatisfaction() {
+        return getAnimalSatisfaction();
+    }
+
+    public void setAnimalSatisfaction(int animalSatisfaction) {
+        this.animalSatisfaction = animalSatisfaction;
+    }
+
+
+    public List<Habitat> getAllHabitats() {
+        return (List<Habitat>) this.habitat;
+    }
 
     @Override
     public String toString() {
         return String.format(
-                "Animal[id=%d, name='%s', specie='%s']",
-                id, name, specie);
+                "Animal[id=%d, name='%s', specie='%s', sound='%s', habitat='%s']",
+                id, name, specie, sound, habitat);
     }
     public void calculateSatisfaction() {
-        animalSatisfation = Satisfation.calculate(this);
+        animalSatisfaction = Satisfaction.calculate(this);
     }
 }
