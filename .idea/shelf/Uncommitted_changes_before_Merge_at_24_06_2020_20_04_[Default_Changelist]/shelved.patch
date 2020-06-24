@@ -1,0 +1,225 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"BranchesTreeState\">\r\n    <expand>\r\n      <path>\r\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n        <item name=\"LOCAL_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n      </path>\r\n      <path>\r\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n        <item name=\"REMOTE_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n      </path>\r\n      <path>\r\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n        <item name=\"REMOTE_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n        <item name=\"GROUP_NODE:origin\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n      </path>\r\n    </expand>\r\n    <select />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"76ed5c28-a76f-4d56-aaad-97d15b2bd956\" name=\"Default Changelist\" comment=\"\">\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/compiler.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/com/piaget/VZoo/AnimalPage.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/com/piaget/VZoo/Satisfaction.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.gradle/6.3/fileHashes/fileHashes.lock\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.gradle/6.3/fileHashes/fileHashes.lock\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.gradle/checksums/checksums.lock\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.gradle/checksums/checksums.lock\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/VZoo.iml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/VZoo.iml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/misc.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/misc.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/modules.xml\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/piaget/VZoo/AnimalController.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/com/piaget/VZoo/AnimalController.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/piaget/VZoo/AnimalKeeperPage.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/com/piaget/VZoo/AnimalKeeperPage.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/piaget/VZoo/EmployeePage.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/com/piaget/VZoo/EmployeePage.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/piaget/VZoo/HabitatController.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/com/piaget/VZoo/HabitatController.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/piaget/VZoo/HabitatManager.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/com/piaget/VZoo/HabitatManager.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/piaget/VZoo/HabitatPage.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/com/piaget/VZoo/HabitatPage.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/piaget/VZoo/Satisfation.java\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/piaget/VZoo/entities/Animal.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/com/piaget/VZoo/entities/Animal.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/piaget/VZoo/entities/Employee.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/com/piaget/VZoo/entities/Employee.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/piaget/VZoo/entities/Habitat.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/com/piaget/VZoo/entities/Habitat.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/resources/static/addAnimal.html\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/resources/static/addAnimal.html\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/resources/static/addEmployee.html\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/resources/static/addEmployee.html\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/resources/static/addHabitat.html\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/resources/static/addHabitat.html\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/resources/static/animalPage.css\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/resources/static/animalPage.html\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/resources/static/animalPage.html\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"CodeStyleSettingsInfer\">\r\n    <option name=\"done\" value=\"true\" />\r\n  </component>\r\n  <component name=\"ExternalProjectsData\">\r\n    <projectState path=\"$PROJECT_DIR$\">\r\n      <ProjectState />\r\n    </projectState>\r\n  </component>\r\n  <component name=\"ExternalProjectsManager\">\r\n    <system id=\"GRADLE\">\r\n      <state>\r\n        <projects_view>\r\n          <tree_state>\r\n            <expand />\r\n            <select />\r\n          </tree_state>\r\n        </projects_view>\r\n      </state>\r\n    </system>\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Interface\" />\r\n        <option value=\"XSLT Stylesheet\" />\r\n        <option value=\"JavaFXApplication\" />\r\n        <option value=\"Kotlin File\" />\r\n        <option value=\"HTML File\" />\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n    <option name=\"UPDATE_TYPE\" value=\"MERGE\" />\r\n  </component>\r\n  <component name=\"ProjectCodeStyleSettingsMigration\">\r\n    <option name=\"version\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"1bopdfMhnDPToXpeAcxpeQ89170\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">\r\n    <property name=\"DefaultHtmlFileTemplate\" value=\"HTML File\" />\r\n    <property name=\"RequestMappingsPanelOrder0\" value=\"0\" />\r\n    <property name=\"RequestMappingsPanelOrder1\" value=\"1\" />\r\n    <property name=\"RequestMappingsPanelWidth0\" value=\"75\" />\r\n    <property name=\"RequestMappingsPanelWidth1\" value=\"75\" />\r\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\r\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\r\n    <property name=\"SHARE_PROJECT_CONFIGURATION_FILES\" value=\"true\" />\r\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\r\n    <property name=\"aspect.path.notification.shown\" value=\"true\" />\r\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$/../SpringDemo-master\" />\r\n    <property name=\"settings.editor.selected.configurable\" value=\"reference.settingsdialog.project.gradle\" />\r\n    <property name=\"show.unlinked.gradle.project.popup\" value=\"true\" />\r\n  </component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyClassDialog.RECENTS_KEY\">\r\n      <recent name=\"com.piaget.VZoo\" />\r\n    </key>\r\n    <key name=\"CreateClassDialog.RecentsKey\">\r\n      <recent name=\"com.piaget.VZoo\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\">\r\n    <configuration name=\"ZooApp\" type=\"SpringBootApplicationConfigurationType\" factoryName=\"Spring Boot\">\r\n      <module name=\"VZoo.main\" />\r\n      <option name=\"SPRING_BOOT_MAIN_CLASS\" value=\"com.piaget.VZoo.ZooApp\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n  </component>\r\n  <component name=\"SvnConfiguration\">\r\n    <configuration />\r\n  </component>\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"76ed5c28-a76f-4d56-aaad-97d15b2bd956\" name=\"Default Changelist\" comment=\"\" />\r\n      <created>1589308389559</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1589308389559</updated>\r\n      <workItem from=\"1593004264252\" duration=\"3384000\" />\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"2\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n    <option name=\"oldMeFiltersMigrated\" value=\"true\" />\r\n  </component>\r\n  <component name=\"WindowStateProjectService\">\r\n    <state x=\"352\" y=\"2\" key=\"#animalPage.xsl\" timestamp=\"1590520746356\">\r\n      <screen x=\"0\" y=\"0\" width=\"1366\" height=\"768\" />\r\n    </state>\r\n    <state x=\"352\" y=\"2\" key=\"#animalPage.xsl/0.0.1366.768@0.0.1366.768\" timestamp=\"1590520746356\" />\r\n    <state x=\"437\" y=\"186\" key=\"#com.intellij.fileTypes.FileTypeChooser\" timestamp=\"1590525266728\">\r\n      <screen x=\"0\" y=\"0\" width=\"1366\" height=\"768\" />\r\n    </state>\r\n    <state x=\"437\" y=\"186\" key=\"#com.intellij.fileTypes.FileTypeChooser/0.0.1366.768@0.0.1366.768\" timestamp=\"1590525266728\" />\r\n    <state x=\"488\" y=\"50\" key=\"#com.intellij.ide.util.MemberChooser\" timestamp=\"1590516250058\">\r\n      <screen x=\"0\" y=\"0\" width=\"1366\" height=\"768\" />\r\n    </state>\r\n    <state x=\"488\" y=\"47\" key=\"#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728\" timestamp=\"1589911466052\" />\r\n    <state x=\"488\" y=\"50\" key=\"#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768\" timestamp=\"1590516250058\" />\r\n    <state x=\"194\" y=\"246\" width=\"408\" height=\"291\" key=\"#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes\" timestamp=\"1590524302203\">\r\n      <screen x=\"0\" y=\"0\" width=\"1366\" height=\"768\" />\r\n    </state>\r\n    <state x=\"194\" y=\"246\" width=\"408\" height=\"291\" key=\"#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.768@0.0.1366.768\" timestamp=\"1590524302203\" />\r\n    <state x=\"434\" y=\"0\" key=\"#com.intellij.refactoring.rename.AutomaticRenamingDialog\" timestamp=\"1589915246951\">\r\n      <screen x=\"0\" y=\"0\" width=\"1366\" height=\"768\" />\r\n    </state>\r\n    <state x=\"434\" y=\"0\" key=\"#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728\" timestamp=\"1589316329625\" />\r\n    <state x=\"434\" y=\"0\" key=\"#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.768@0.0.1366.768\" timestamp=\"1589915246951\" />\r\n    <state x=\"157\" y=\"176\" key=\"#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog\" timestamp=\"1593007720933\">\r\n      <screen x=\"0\" y=\"0\" width=\"1680\" height=\"1010\" />\r\n    </state>\r\n    <state x=\"128\" y=\"134\" key=\"#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.768@0.0.1366.768\" timestamp=\"1589919773385\" />\r\n    <state x=\"157\" y=\"176\" key=\"#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1680.-25.1536.832/0.0.1680.1010@0.0.1680.1010\" timestamp=\"1593007720933\" />\r\n    <state x=\"463\" y=\"138\" key=\"FileChooserDialogImpl\" timestamp=\"1591119838784\">\r\n      <screen x=\"0\" y=\"0\" width=\"1366\" height=\"768\" />\r\n    </state>\r\n    <state x=\"463\" y=\"138\" key=\"FileChooserDialogImpl/0.0.1366.768@0.0.1366.768\" timestamp=\"1591119838784\" />\r\n    <state width=\"1637\" height=\"272\" key=\"GridCell.Tab.0.bottom\" timestamp=\"1593008135559\">\r\n      <screen x=\"0\" y=\"0\" width=\"1680\" height=\"1010\" />\r\n    </state>\r\n    <state width=\"1637\" height=\"272\" key=\"GridCell.Tab.0.bottom/1680.-25.1536.832/0.0.1680.1010@0.0.1680.1010\" timestamp=\"1593008135559\" />\r\n    <state width=\"1637\" height=\"272\" key=\"GridCell.Tab.0.center\" timestamp=\"1593008135558\">\r\n      <screen x=\"0\" y=\"0\" width=\"1680\" height=\"1010\" />\r\n    </state>\r\n    <state width=\"1637\" height=\"272\" key=\"GridCell.Tab.0.center/1680.-25.1536.832/0.0.1680.1010@0.0.1680.1010\" timestamp=\"1593008135558\" />\r\n    <state width=\"1637\" height=\"272\" key=\"GridCell.Tab.0.left\" timestamp=\"1593008135558\">\r\n      <screen x=\"0\" y=\"0\" width=\"1680\" height=\"1010\" />\r\n    </state>\r\n    <state width=\"1637\" height=\"272\" key=\"GridCell.Tab.0.left/1680.-25.1536.832/0.0.1680.1010@0.0.1680.1010\" timestamp=\"1593008135558\" />\r\n    <state width=\"1637\" height=\"272\" key=\"GridCell.Tab.0.right\" timestamp=\"1593008135559\">\r\n      <screen x=\"0\" y=\"0\" width=\"1680\" height=\"1010\" />\r\n    </state>\r\n    <state width=\"1637\" height=\"272\" key=\"GridCell.Tab.0.right/1680.-25.1536.832/0.0.1680.1010@0.0.1680.1010\" timestamp=\"1593008135559\" />\r\n    <state width=\"1637\" height=\"272\" key=\"GridCell.Tab.1.bottom\" timestamp=\"1593008135559\">\r\n      <screen x=\"0\" y=\"0\" width=\"1680\" height=\"1010\" />\r\n    </state>\r\n    <state width=\"1637\" height=\"272\" key=\"GridCell.Tab.1.bottom/1680.-25.1536.832/0.0.1680.1010@0.0.1680.1010\" timestamp=\"1593008135559\" />\r\n    <state width=\"1637\" height=\"272\" key=\"GridCell.Tab.1.center\" timestamp=\"1593008135559\">\r\n      <screen x=\"0\" y=\"0\" width=\"1680\" height=\"1010\" />\r\n    </state>\r\n    <state width=\"1637\" height=\"272\" key=\"GridCell.Tab.1.center/1680.-25.1536.832/0.0.1680.1010@0.0.1680.1010\" timestamp=\"1593008135559\" />\r\n    <state width=\"1637\" height=\"272\" key=\"GridCell.Tab.1.left\" timestamp=\"1593008135559\">\r\n      <screen x=\"0\" y=\"0\" width=\"1680\" height=\"1010\" />\r\n    </state>\r\n    <state width=\"1637\" height=\"272\" key=\"GridCell.Tab.1.left/1680.-25.1536.832/0.0.1680.1010@0.0.1680.1010\" timestamp=\"1593008135559\" />\r\n    <state width=\"1637\" height=\"272\" key=\"GridCell.Tab.1.right\" timestamp=\"1593008135559\">\r\n      <screen x=\"0\" y=\"0\" width=\"1680\" height=\"1010\" />\r\n    </state>\r\n    <state width=\"1637\" height=\"272\" key=\"GridCell.Tab.1.right/1680.-25.1536.832/0.0.1680.1010@0.0.1680.1010\" timestamp=\"1593008135559\" />\r\n    <state x=\"226\" y=\"34\" key=\"SettingsEditor\" timestamp=\"1593004351690\">\r\n      <screen x=\"0\" y=\"0\" width=\"1680\" height=\"1010\" />\r\n    </state>\r\n    <state x=\"184\" y=\"26\" key=\"SettingsEditor/0.0.1366.768@0.0.1366.768\" timestamp=\"1590520880885\" />\r\n    <state x=\"226\" y=\"34\" key=\"SettingsEditor/1680.-25.1536.832/0.0.1680.1010@0.0.1680.1010\" timestamp=\"1593004351690\" />\r\n    <state x=\"108\" y=\"207\" key=\"com.intellij.ide.util.TipDialog\" timestamp=\"1591119271380\">\r\n      <screen x=\"0\" y=\"0\" width=\"1366\" height=\"768\" />\r\n    </state>\r\n    <state x=\"108\" y=\"207\" key=\"com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768\" timestamp=\"1591119271380\" />\r\n    <state x=\"830\" y=\"388\" key=\"com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2\" timestamp=\"1590527864750\">\r\n      <screen x=\"0\" y=\"0\" width=\"1366\" height=\"768\" />\r\n    </state>\r\n    <state x=\"830\" y=\"388\" key=\"com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.768@0.0.1366.768\" timestamp=\"1590527864750\" />\r\n    <state x=\"65\" y=\"4\" key=\"new project wizard\" timestamp=\"1590521230027\">\r\n      <screen x=\"0\" y=\"0\" width=\"1366\" height=\"768\" />\r\n    </state>\r\n    <state x=\"65\" y=\"4\" key=\"new project wizard/0.0.1366.768@0.0.1366.768\" timestamp=\"1590521230027\" />\r\n    <state x=\"339\" y=\"172\" key=\"run.anything.popup\" timestamp=\"1590527578330\">\r\n      <screen x=\"0\" y=\"0\" width=\"1366\" height=\"768\" />\r\n    </state>\r\n    <state x=\"339\" y=\"172\" key=\"run.anything.popup/0.0.1366.768@0.0.1366.768\" timestamp=\"1590527578330\" />\r\n    <state x=\"426\" y=\"68\" width=\"827\" height=\"942\" key=\"search.everywhere.popup\" timestamp=\"1593008094770\">\r\n      <screen x=\"0\" y=\"0\" width=\"1680\" height=\"1010\" />\r\n    </state>\r\n    <state x=\"346\" y=\"49\" width=\"672\" height=\"678\" key=\"search.everywhere.popup/0.0.1366.728@0.0.1366.728\" timestamp=\"1589309606019\" />\r\n    <state x=\"346\" y=\"52\" width=\"672\" height=\"716\" key=\"search.everywhere.popup/0.0.1366.768@0.0.1366.768\" timestamp=\"1591121639317\" />\r\n    <state x=\"426\" y=\"68\" width=\"827\" height=\"942\" key=\"search.everywhere.popup/1680.-25.1536.832/0.0.1680.1010@0.0.1680.1010\" timestamp=\"1593008094770\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/workspace.xml	(revision b20efc08c00756a5a0c112974c8720e2eacdc9fd)
++++ .idea/workspace.xml	(date 1593025406163)
+@@ -20,33 +20,11 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="76ed5c28-a76f-4d56-aaad-97d15b2bd956" name="Default Changelist" comment="">
+-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/com/piaget/VZoo/AnimalPage.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/com/piaget/VZoo/Satisfaction.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.gradle/6.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/fileHashes/fileHashes.lock" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/VZoo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/VZoo.iml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/main/java/com/piaget/VZoo/AnimalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/piaget/VZoo/AnimalController.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/piaget/VZoo/AnimalKeeperPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/piaget/VZoo/AnimalKeeperPage.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/piaget/VZoo/EmployeePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/piaget/VZoo/EmployeePage.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/piaget/VZoo/HabitatController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/piaget/VZoo/HabitatController.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/piaget/VZoo/HabitatManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/piaget/VZoo/HabitatManager.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/piaget/VZoo/HabitatPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/piaget/VZoo/HabitatPage.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/piaget/VZoo/Satisfation.java" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/piaget/VZoo/entities/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/piaget/VZoo/entities/Animal.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/piaget/VZoo/entities/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/piaget/VZoo/entities/Employee.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/piaget/VZoo/entities/Habitat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/piaget/VZoo/entities/Habitat.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/addAnimal.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/addAnimal.html" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/addEmployee.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/addEmployee.html" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/addHabitat.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/addHabitat.html" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/animalPage.css" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/animalPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/animalPage.html" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/resources/static/employeePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/employeePage.html" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -109,7 +87,7 @@
+     <property name="WebServerToolWindowFactoryState" value="false" />
+     <property name="aspect.path.notification.shown" value="true" />
+     <property name="last_opened_file_path" value="$PROJECT_DIR$/../SpringDemo-master" />
+-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
++    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Spring EL" />
+     <property name="show.unlinked.gradle.project.popup" value="true" />
+   </component>
+   <component name="RecentsManager">
+@@ -139,7 +117,8 @@
+       <option name="number" value="Default" />
+       <option name="presentableId" value="Default" />
+       <updated>1589308389559</updated>
+-      <workItem from="1593004264252" duration="3384000" />
++      <workItem from="1593004264252" duration="5065000" />
++      <workItem from="1593023215758" duration="2175000" />
+     </task>
+     <servers />
+   </component>
+@@ -181,52 +160,68 @@
+     </state>
+     <state x="434" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1589316329625" />
+     <state x="434" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.768@0.0.1366.768" timestamp="1589915246951" />
+-    <state x="157" y="176" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1593007720933">
++    <state x="157" y="176" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1593008801187">
+       <screen x="0" y="0" width="1680" height="1010" />
+     </state>
+     <state x="128" y="134" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.768@0.0.1366.768" timestamp="1589919773385" />
+-    <state x="157" y="176" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1680.-25.1536.832/0.0.1680.1010@0.0.1680.1010" timestamp="1593007720933" />
++    <state x="157" y="176" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1680.-25.1536.832/0.0.1680.1010@0.0.1680.1010" timestamp="1593008801187" />
+     <state x="463" y="138" key="FileChooserDialogImpl" timestamp="1591119838784">
+       <screen x="0" y="0" width="1366" height="768" />
+     </state>
+     <state x="463" y="138" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1591119838784" />
+-    <state width="1637" height="272" key="GridCell.Tab.0.bottom" timestamp="1593008135559">
++    <state width="1637" height="336" key="GridCell.Tab.0.bottom" timestamp="1593024965112">
++      <screen x="0" y="0" width="1680" height="1010" />
++    </state>
++    <state width="1637" height="336" key="GridCell.Tab.0.bottom/1680.-25.1536.832/0.0.1680.1010@0.0.1680.1010" timestamp="1593024965112" />
++    <state width="1637" height="336" key="GridCell.Tab.0.center" timestamp="1593024965112">
++      <screen x="0" y="0" width="1680" height="1010" />
++    </state>
++    <state width="1637" height="336" key="GridCell.Tab.0.center/1680.-25.1536.832/0.0.1680.1010@0.0.1680.1010" timestamp="1593024965112" />
++    <state width="1637" height="336" key="GridCell.Tab.0.left" timestamp="1593024965112">
++      <screen x="0" y="0" width="1680" height="1010" />
++    </state>
++    <state width="1637" height="336" key="GridCell.Tab.0.left/1680.-25.1536.832/0.0.1680.1010@0.0.1680.1010" timestamp="1593024965112" />
++    <state width="1637" height="336" key="GridCell.Tab.0.right" timestamp="1593024965112">
+       <screen x="0" y="0" width="1680" height="1010" />
+     </state>
+-    <state width="1637" height="272" key="GridCell.Tab.0.bottom/1680.-25.1536.832/0.0.1680.1010@0.0.1680.1010" timestamp="1593008135559" />
+-    <state width="1637" height="272" key="GridCell.Tab.0.center" timestamp="1593008135558">
++    <state width="1637" height="336" key="GridCell.Tab.0.right/1680.-25.1536.832/0.0.1680.1010@0.0.1680.1010" timestamp="1593024965112" />
++    <state width="1637" height="336" key="GridCell.Tab.1.bottom" timestamp="1593024965112">
+       <screen x="0" y="0" width="1680" height="1010" />
+     </state>
+-    <state width="1637" height="272" key="GridCell.Tab.0.center/1680.-25.1536.832/0.0.1680.1010@0.0.1680.1010" timestamp="1593008135558" />
+-    <state width="1637" height="272" key="GridCell.Tab.0.left" timestamp="1593008135558">
++    <state width="1637" height="336" key="GridCell.Tab.1.bottom/1680.-25.1536.832/0.0.1680.1010@0.0.1680.1010" timestamp="1593024965112" />
++    <state width="1637" height="336" key="GridCell.Tab.1.center" timestamp="1593024965112">
+       <screen x="0" y="0" width="1680" height="1010" />
+     </state>
+-    <state width="1637" height="272" key="GridCell.Tab.0.left/1680.-25.1536.832/0.0.1680.1010@0.0.1680.1010" timestamp="1593008135558" />
+-    <state width="1637" height="272" key="GridCell.Tab.0.right" timestamp="1593008135559">
++    <state width="1637" height="336" key="GridCell.Tab.1.center/1680.-25.1536.832/0.0.1680.1010@0.0.1680.1010" timestamp="1593024965112" />
++    <state width="1637" height="336" key="GridCell.Tab.1.left" timestamp="1593024965112">
+       <screen x="0" y="0" width="1680" height="1010" />
+     </state>
+-    <state width="1637" height="272" key="GridCell.Tab.0.right/1680.-25.1536.832/0.0.1680.1010@0.0.1680.1010" timestamp="1593008135559" />
+-    <state width="1637" height="272" key="GridCell.Tab.1.bottom" timestamp="1593008135559">
++    <state width="1637" height="336" key="GridCell.Tab.1.left/1680.-25.1536.832/0.0.1680.1010@0.0.1680.1010" timestamp="1593024965112" />
++    <state width="1637" height="336" key="GridCell.Tab.1.right" timestamp="1593024965112">
+       <screen x="0" y="0" width="1680" height="1010" />
+     </state>
+-    <state width="1637" height="272" key="GridCell.Tab.1.bottom/1680.-25.1536.832/0.0.1680.1010@0.0.1680.1010" timestamp="1593008135559" />
+-    <state width="1637" height="272" key="GridCell.Tab.1.center" timestamp="1593008135559">
++    <state width="1637" height="336" key="GridCell.Tab.1.right/1680.-25.1536.832/0.0.1680.1010@0.0.1680.1010" timestamp="1593024965112" />
++    <state width="1637" height="336" key="GridCell.Tab.2.bottom" timestamp="1593024965113">
+       <screen x="0" y="0" width="1680" height="1010" />
+     </state>
+-    <state width="1637" height="272" key="GridCell.Tab.1.center/1680.-25.1536.832/0.0.1680.1010@0.0.1680.1010" timestamp="1593008135559" />
+-    <state width="1637" height="272" key="GridCell.Tab.1.left" timestamp="1593008135559">
++    <state width="1637" height="336" key="GridCell.Tab.2.bottom/1680.-25.1536.832/0.0.1680.1010@0.0.1680.1010" timestamp="1593024965113" />
++    <state width="1637" height="336" key="GridCell.Tab.2.center" timestamp="1593024965112">
+       <screen x="0" y="0" width="1680" height="1010" />
+     </state>
+-    <state width="1637" height="272" key="GridCell.Tab.1.left/1680.-25.1536.832/0.0.1680.1010@0.0.1680.1010" timestamp="1593008135559" />
+-    <state width="1637" height="272" key="GridCell.Tab.1.right" timestamp="1593008135559">
++    <state width="1637" height="336" key="GridCell.Tab.2.center/1680.-25.1536.832/0.0.1680.1010@0.0.1680.1010" timestamp="1593024965112" />
++    <state width="1637" height="336" key="GridCell.Tab.2.left" timestamp="1593024965112">
+       <screen x="0" y="0" width="1680" height="1010" />
+     </state>
+-    <state width="1637" height="272" key="GridCell.Tab.1.right/1680.-25.1536.832/0.0.1680.1010@0.0.1680.1010" timestamp="1593008135559" />
+-    <state x="226" y="34" key="SettingsEditor" timestamp="1593004351690">
++    <state width="1637" height="336" key="GridCell.Tab.2.left/1680.-25.1536.832/0.0.1680.1010@0.0.1680.1010" timestamp="1593024965112" />
++    <state width="1637" height="336" key="GridCell.Tab.2.right" timestamp="1593024965112">
++      <screen x="0" y="0" width="1680" height="1010" />
++    </state>
++    <state width="1637" height="336" key="GridCell.Tab.2.right/1680.-25.1536.832/0.0.1680.1010@0.0.1680.1010" timestamp="1593024965112" />
++    <state x="226" y="34" key="SettingsEditor" timestamp="1593025110707">
+       <screen x="0" y="0" width="1680" height="1010" />
+     </state>
+     <state x="184" y="26" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1590520880885" />
+-    <state x="226" y="34" key="SettingsEditor/1680.-25.1536.832/0.0.1680.1010@0.0.1680.1010" timestamp="1593004351690" />
++    <state x="226" y="34" key="SettingsEditor/1680.-25.1536.832/0.0.1680.1010@0.0.1680.1010" timestamp="1593025110707" />
+     <state x="108" y="207" key="com.intellij.ide.util.TipDialog" timestamp="1591119271380">
+       <screen x="0" y="0" width="1366" height="768" />
+     </state>
+@@ -243,11 +238,25 @@
+       <screen x="0" y="0" width="1366" height="768" />
+     </state>
+     <state x="339" y="172" key="run.anything.popup/0.0.1366.768@0.0.1366.768" timestamp="1590527578330" />
+-    <state x="426" y="68" width="827" height="942" key="search.everywhere.popup" timestamp="1593008094770">
++    <state x="426" y="68" width="827" height="942" key="search.everywhere.popup" timestamp="1593009501854">
+       <screen x="0" y="0" width="1680" height="1010" />
+     </state>
+     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1589309606019" />
+     <state x="346" y="52" width="672" height="716" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1591121639317" />
+-    <state x="426" y="68" width="827" height="942" key="search.everywhere.popup/1680.-25.1536.832/0.0.1680.1010@0.0.1680.1010" timestamp="1593008094770" />
++    <state x="426" y="68" width="827" height="942" key="search.everywhere.popup/1680.-25.1536.832/0.0.1680.1010@0.0.1680.1010" timestamp="1593009501854" />
++  </component>
++  <component name="XDebuggerManager">
++    <breakpoint-manager>
++      <breakpoints>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>file://$PROJECT_DIR$/src/main/java/com/piaget/VZoo/AnimalController.java</url>
++          <line>52</line>
++          <option name="timeStamp" value="1" />
++        </line-breakpoint>
++      </breakpoints>
++    </breakpoint-manager>
++  </component>
++  <component name="com.intellij.coverage.CoverageDataManagerImpl">
++    <SUITE FILE_PATH="coverage/VZoo$ZooApp.ic" NAME="ZooApp Coverage Results" MODIFIED="1593024929655" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: src/main/java/com/piaget/VZoo/AnimalController.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>\r\npackage com.piaget.VZoo;\r\n\r\nimport com.piaget.VZoo.entities.Animal;\r\nimport com.piaget.VZoo.entities.Habitat;\r\nimport com.piaget.VZoo.repositories.AnimalRepository;\r\nimport org.springframework.beans.factory.annotation.Autowired;\r\nimport com.piaget.VZoo.entities.Animal;\r\nimport com.piaget.VZoo.repositories.AnimalRepository;\r\nimport org.springframework.beans.factory.annotation.Autowired;\r\nimport org.springframework.stereotype.Controller;\r\nimport org.springframework.ui.Model;\r\nimport org.springframework.validation.BindingResult;\r\nimport org.springframework.web.bind.annotation.GetMapping;\r\nimport org.springframework.web.bind.annotation.ModelAttribute;\r\nimport org.springframework.web.bind.annotation.PathVariable;\r\nimport org.springframework.web.bind.annotation.PostMapping;\r\n\r\nimport javax.validation.Valid;\r\nimport java.util.List;\r\n\r\n\r\n@Controller\r\npublic class AnimalController {\r\n\r\n    public static AnimalRepository animalRepository;\r\n\r\n    @GetMapping(\"/animalPage\")\r\n    public String animal(Model model)\r\n    {\r\n        return \"animalPage\";\r\n    }\r\n\r\n    @PostMapping(\"/animalPage\")\r\n    public String goToAnimal(Model model)\r\n    {\r\n        return \"animalPage\";\r\n    }\r\n\r\n\r\n    @Autowired\r\n    public AnimalController(AnimalRepository animalRepository){\r\n        this.animalRepository = animalRepository;\r\n    }\r\n\r\n    @GetMapping(\"/createAnimal\")\r\n    public String showSignUpForm(Animal animal) {\r\n        return \"add-animal\";\r\n    }\r\n\r\n    @PostMapping(\"/addAnimal\")\r\n    public String addAnimal(@Valid Animal animal, BindingResult result, Model model) {\r\n        if (result.hasErrors()) {\r\n\r\n            return \"createAnimal\";\r\n        }\r\n\r\n        animalRepository.save(animal);\r\n        model.addAttribute(\"animal\", animalRepository.findAll());\r\n\r\n        // obter todos os habitat\r\n        List<Habitat> listHabitats = HabitatController.habitatRepository.findAll();\r\n        animal.setHabitat(listHabitats.get(0));\r\n\r\n        List<Animal> listAnimals = (List<Animal>) animalRepository.findAll();\r\n\r\n        for (Animal listAnimal : listAnimals) {\r\n            listAnimal.calculateSatisfaction();\r\n        }\r\n\r\n        animal.calculateSatisfaction();\r\n\r\n        animalRepository.save(animal);\r\n\r\n        calculateTotalSatisfaction(model);\r\n\r\n        List<Habitat> habitatsAnimalPassed = animal.getAllHabitats();\r\n\r\n        model.addAttribute(\"habitatsAnimalPassed\", habitatsAnimalPassed);\r\n        model.addAttribute(\"animals\", animalRepository.findAll());\r\n\r\n        return \"animalPage\";\r\n    }\r\n\r\n    @GetMapping(\"/deleteAnimal/{id}\")\r\n    public String deleteAnimal(@PathVariable(\"id\") long id, Model model) {\r\n        Animal animal = animalRepository.findById(id);\r\n        animalRepository.delete(animal);\r\n        model.addAttribute(\"animals\", animalRepository.findAll());\r\n        return \"animalPage\";\r\n    }\r\n\r\n    private void calculateTotalSatisfaction(Model model) {\r\n        List<Animal> listAnimals = (List<Animal>) animalRepository.findAll();\r\n\r\n        int accumulatedSatisfaction = 0;\r\n\r\n        for (Animal listAnimal : listAnimals) {\r\n            listAnimal.calculateSatisfaction();\r\n            accumulatedSatisfaction += listAnimal.getAnimalSatisfaction();\r\n\r\n        }\r\n\r\n        int allAnimals = listAnimals.size();\r\n\r\n        double satisfactionMedia = accumulatedSatisfaction / allAnimals;\r\n\r\n        model.addAttribute(\"totalSatisfaction\", satisfactionMedia);\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/main/java/com/piaget/VZoo/AnimalController.java	(revision b20efc08c00756a5a0c112974c8720e2eacdc9fd)
++++ src/main/java/com/piaget/VZoo/AnimalController.java	(date 1593024801464)
+@@ -51,7 +51,6 @@
+     @PostMapping("/addAnimal")
+     public String addAnimal(@Valid Animal animal, BindingResult result, Model model) {
+         if (result.hasErrors()) {
+-
+             return "createAnimal";
+         }
+ 
+Index: src/main/resources/static/employeePage.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>\r\n<!DOCTYPE html>\r\n<html xmlns:th=\"http://www.thymeleaf.org\">\r\n\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <title>VZoo - Employee List</title>\r\n    <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css\" integrity=\"sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk\" crossorigin=\"anonymous\">\r\n</head>\r\n<body class=\"bg-light container\">\r\n\r\n    <h1 class=\"my-5\">Employee list</h1>\r\n\r\n    <div class=\"card border-0 shadow\" th:switch=\"${Emplyee}\" >\r\n\r\n        <div class=\"card-body\">\r\n\r\n            <div class=\"row\">\r\n                <div class=\"col\">\r\n                    <div class=\"input-group input-group-sm\">\r\n                        <input type=\"text\" class=\"form-control\" placeholder=\"Search for an employee\">\r\n                        <div class=\"input-group-append\">\r\n                            <button class=\"btn btn-secondary\" type=\"button\">Search</button>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n\r\n                <div class=\"col-auto\">\r\n                    <a href=\"addEmployee.html\" class=\"btn btn-success btn-sm\">New employee</a>\r\n                </div>\r\n            </div>\r\n\r\n            <table class=\"table mt-4\">\r\n                <thead>\r\n                    <tr>\r\n                        <th>Name</th>\r\n                        <th>Image</th>\r\n                        <th>Specie</th>\r\n                        <th>Sound</th>\r\n                        <th>Habitat</th>\r\n                        <!--<th>Animal Satisfation</th>-->\r\n                        <th>Actions</th>\r\n                    </tr>\r\n                </thead>\r\n\r\n                <tbody th:case=\"null\">\r\n                    <tr>\r\n                        <td class=\"text-muted\" colspan=\"6\">No employees created yet.</td>\r\n                    </tr>\r\n                </tbody>\r\n\r\n                <tbody th:case=\"*\">\r\n                    <tr th:each=\"emplyee : ${emplyee}\">\r\n                        <th>\r\n                            <a th:href=\"@{/editEmployee/{id}(id=${emplyee.id})}\" th:text=\"${emplyee.name}\"></a>\r\n                        </th>\r\n                        <td th:text=\"${emplyee.image}\"></td>\r\n                        <td th:text=\"${emplyee.function}\"></td>\r\n                        <td th:text=\"${emplyee.animal}\"></td>\r\n                        <td th:text=\"${emplyee.habitat}\"></td>\r\n                        <td>\r\n                            <a th:href=\"@{/deleteEmployee/{id}(id=${emplyee.id})}\" class=\"btn btn-danger text-white btn-sm\">\r\n                                Delete\r\n                            </a>\r\n                        </td>\r\n                    </tr>\r\n                </tbody>\r\n\r\n            </table>\r\n        </div>\r\n    </div>\r\n</body>\r\n</html>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/main/resources/static/employeePage.html	(revision b20efc08c00756a5a0c112974c8720e2eacdc9fd)
++++ src/main/resources/static/employeePage.html	(date 1593025405438)
+@@ -11,7 +11,7 @@
+ 
+     <h1 class="my-5">Employee list</h1>
+ 
+-    <div class="card border-0 shadow" th:switch="${Emplyee}" >
++    <div class="card border-0 shadow" th:switch="${Employee}" >
+ 
+         <div class="card-body">
+ 
+@@ -50,7 +50,7 @@
+                 </tbody>
+ 
+                 <tbody th:case="*">
+-                    <tr th:each="emplyee : ${emplyee}">
++                    <tr th:each="employee:${employee}">
+                         <th>
+                             <a th:href="@{/editEmployee/{id}(id=${emplyee.id})}" th:text="${emplyee.name}"></a>
+                         </th>

@@ -25,7 +25,7 @@
     <div class="container">
         <h1 class="my-5">Employee list</h1>
 
-        <div class="card border-0 shadow" th:switch="${Emplyee}" >
+        <div class="card border-0 shadow" th:switch="${Employee}" >
 
             <div class="card-body">
 
@@ -64,16 +64,16 @@
                     </tbody>
 
                     <tbody th:case="*">
-                        <tr th:each="emplyee : ${emplyee}">
+                        <tr th:each="emplyee : ${employee}">
                             <th>
-                                <a th:href="@{/editEmployee/{id}(id=${emplyee.id})}" th:text="${emplyee.name}"></a>
+                                <a th:href="@{/editEmployee/{id}(id=${employee.id})}" th:text="${employee.name}"></a>
                             </th>
-                            <td th:text="${emplyee.image}"></td>
-                            <td th:text="${emplyee.function}"></td>
-                            <td th:text="${emplyee.animal}"></td>
-                            <td th:text="${emplyee.habitat}"></td>
+                            <td th:text="${employee.image}"></td>
+                            <td th:text="${employee.function}"></td>
+                            <td th:text="${employee.animal}"></td>
+                            <td th:text="${employee.habitat}"></td>
                             <td>
-                                <a th:href="@{/deleteEmployee/{id}(id=${emplyee.id})}" class="btn btn-danger text-white btn-sm">
+                                <a th:href="@{/deleteEmployee/{id}(id=${employee.id})}" class="btn btn-danger text-white btn-sm">
                                     Delete
                                 </a>
                             </td>

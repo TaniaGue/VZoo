@@ -51,7 +51,6 @@ public class AnimalController {
     @PostMapping("/addAnimal")
     public String addAnimal(@Valid Animal animal, BindingResult result, Model model) {
         if (result.hasErrors()) {
-
             return "createAnimal";
         }
 
