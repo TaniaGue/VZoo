@@ -6,52 +6,68 @@
     <title>VZoo - Add Employee</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 </head>
-<body class="container bg-light">
+<body class="bg-light">
 
-    <h1 class="my-5">New employee</h1>
+    <nav class="navbar navbar-dark bg-dark navbar-expand">
+        <div class="container">
+            <a class="navbar-brand" href="zooPage.html">VZoo</a>
 
-    <div class="card border-0 shadow">
-        <div class="card-body">
-
-            <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" th:field="*{name}" class="form-control" id="name" placeholder="Name">
-                <span th:if="${#fields.hasErrors('name')}" th:errors="*{name}" class="text-danger"></span>
-            </div>
-
-            <div class="form-group">
-                <label for="inputGroupFile01">Image</label>
-                <div class="input-group mb-3">
-                    <div class="custom-file">
-                        <input type="file" th:field="*{image}" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
-                        <label class="custom-file-label" for="inputGroupFile01">Choose image</label>
-                    </div>
+            <div class="collapse navbar-collapse" id="navbar">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="zooPage.html">Home</a>
+                    <a class="nav-item nav-link" href="animalPage.html">Animals</a>
+                    <a class="nav-item nav-link active" href="employeePage.html">Employee</a>
+                    <a class="nav-item nav-link" href="habitatPage.html">Habitat</a>
                 </div>
-                <span th:if="${#fields.hasErrors('image')}" th:errors="*{image}" class="text-danger"></span>
             </div>
+        </div>
+    </nav>
 
-            <div class="form-group">
-                <label for="function">Function</label>
-                <input type="text" th:field="*{function}" class="form-control" name="function" id="function" placeholder="Function" /><br>
-                <span th:if="${#fields.hasErrors('function')}" th:errors="*{function}" class="text-danger"></span>
-            </div>
+    <div class="container">
+        <h1 class="my-5">New employee</h1>
+        <div class="card border-0 shadow">
+            <div class="card-body">
 
-            <div class="form-group">
-                <label for="animal">Animal</label>
-                <input type="text" th:field="*{animal}" class="form-control" name="animal" id="animal" placeholder="Animal" /><br>
-                <span th:if="${#fields.hasErrors('animal')}" th:errors="*{animal}" class="text-danger"></span>
-            </div>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" th:field="*{name}" class="form-control" id="name" placeholder="Name">
+                    <span th:if="${#fields.hasErrors('name')}" th:errors="*{name}" class="text-danger"></span>
+                </div>
 
-            <div class="form-group">
-                <label for="habitat">Habitat</label>
-                <input type="text" th:field="*{habitat}" class="form-control" name="habitat" id="habitat" placeholder="Habitat" /><br>
-                <span th:if="${#fields.hasErrors('habitat')}" th:errors="*{habitat}" class="text-danger"></span>
-            </div>
+                <div class="form-group">
+                    <label for="inputGroupFile01">Image</label>
+                    <div class="input-group mb-3">
+                        <div class="custom-file">
+                            <input type="file" th:field="*{image}" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+                            <label class="custom-file-label" for="inputGroupFile01">Choose image</label>
+                        </div>
+                    </div>
+                    <span th:if="${#fields.hasErrors('image')}" th:errors="*{image}" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="function">Function</label>
+                    <input type="text" th:field="*{function}" class="form-control" name="function" id="function" placeholder="Function" /><br>
+                    <span th:if="${#fields.hasErrors('function')}" th:errors="*{function}" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="animal">Animal</label>
+                    <input type="text" th:field="*{animal}" class="form-control" name="animal" id="animal" placeholder="Animal" /><br>
+                    <span th:if="${#fields.hasErrors('animal')}" th:errors="*{animal}" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="habitat">Habitat</label>
+                    <input type="text" th:field="*{habitat}" class="form-control" name="habitat" id="habitat" placeholder="Habitat" /><br>
+                    <span th:if="${#fields.hasErrors('habitat')}" th:errors="*{habitat}" class="text-danger"></span>
+                </div>
 
 
-            <div class="text-right">
-                <a href="employeePage.html" class="btn btn-secondary mr-2">Cancel</a>
-                <button type="submit" class="btn btn-success" value="Add Animal" href="animalPage.html">Submit</button>
+                <div class="text-right">
+                    <a href="employeePage.html" class="btn btn-secondary mr-2">Cancel</a>
+                    <button type="submit" class="btn btn-success" value="Add Animal" href="animalPage.html">Submit</button>
+                </div>
             </div>
         </div>
 

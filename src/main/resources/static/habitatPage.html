@@ -8,64 +8,80 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 </head>
 
-<body class="bg-light container">
+<body class="bg-light">
 
-    <h1 class="my-5">Habitat list</h1>
+    <nav class="navbar navbar-dark bg-dark navbar-expand">
+        <div class="container">
+            <a class="navbar-brand" href="zooPage.html">VZoo</a>
+
+            <div class="collapse navbar-collapse" id="navbar">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="zooPage.html">Home</a>
+                    <a class="nav-item nav-link" href="animalPage.html">Animals</a>
+                    <a class="nav-item nav-link" href="employeePage.html">Employee</a>
+                    <a class="nav-item nav-link active" href="habitatPage.html">Habitat</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1 class="my-5">Habitat list</h1>
 
 
-    <div class="card border-0 shadow" th:switch="${Habitat}" >
+        <div class="card border-0 shadow" th:switch="${Habitat}" >
 
-        <div class="card-body">
+            <div class="card-body">
 
-            <div class="row">
-                <div class="col">
-                    <div class="input-group input-group-sm">
-                        <input type="text" class="form-control" placeholder="Search for an habitat">
-                        <div class="input-group-append">
-                            <button class="btn btn-secondary" type="button">Search</button>
+                <div class="row">
+                    <div class="col">
+                        <div class="input-group input-group-sm">
+                            <input type="text" class="form-control" placeholder="Search for an habitat">
+                            <div class="input-group-append">
+                                <button class="btn btn-secondary" type="button">Search</button>
+                            </div>
                         </div>
+                    </div>
+
+                    <div class="col-auto">
+                        <a href="addHabitat.html" class="btn btn-success btn-sm">New habitat</a>
                     </div>
                 </div>
 
-                <div class="col-auto">
-                    <a href="addHabitat.html" class="btn btn-success btn-sm">New habitat</a>
-                </div>
+                <table class="table mt-4">
+                    <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Image</th>
+                        <th>Area (m<sup>2</sup>)</th>
+                        <th>Actions</th>
+                    </tr>
+                    </thead>
+
+                    <tbody th:case="null">
+                    <tr>
+                        <td class="text-muted" colspan="6">No employees created yet.</td>
+                    </tr>
+                    </tbody>
+
+                    <tbody th:case="*">
+                    <tr th:each="habitat : ${habitat}">
+                        <th>
+                            <a th:href="@{/editHabitat/{id}(id=${habitat.id})}" th:text="${habitat.name}"></a>
+                        </th>
+                        <td th:text="${habitat.image}"></td>
+                        <td th:text="${habitat.area}"></td>
+                        <td>
+                            <a th:href="@{/deleteHabitat/{id}(id=${habitat.id})}" class="btn btn-danger text-white btn-sm">
+                                Delete
+                            </a>
+                        </td>
+                    </tr>
+                    </tbody>
+
+                </table>
             </div>
-
-            <table class="table mt-4">
-                <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Image</th>
-                    <th>Area (m<sup>2</sup>)</th>
-                    <th>Actions</th>
-                </tr>
-                </thead>
-
-                <tbody th:case="null">
-                <tr>
-                    <td class="text-muted" colspan="6">No employees created yet.</td>
-                </tr>
-                </tbody>
-
-                <tbody th:case="*">
-                <tr th:each="habitat : ${habitat}">
-                    <th>
-                        <a th:href="@{/editHabitat/{id}(id=${habitat.id})}" th:text="${habitat.name}"></a>
-                    </th>
-                    <td th:text="${habitat.image}"></td>
-                    <td th:text="${habitat.area}"></td>
-                    <td>
-                        <a th:href="@{/deleteHabitat/{id}(id=${habitat.id})}" class="btn btn-danger text-white btn-sm">
-                            Delete
-                        </a>
-                    </td>
-                </tr>
-                </tbody>
-
-            </table>
         </div>
     </div>
-
 </body>
 </html>

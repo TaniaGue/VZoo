@@ -20,33 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="76ed5c28-a76f-4d56-aaad-97d15b2bd956" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/piaget/VZoo/AnimalPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/piaget/VZoo/Satisfaction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/VZoo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/VZoo.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/piaget/VZoo/AnimalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/piaget/VZoo/AnimalController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/piaget/VZoo/AnimalKeeperPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/piaget/VZoo/AnimalKeeperPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/piaget/VZoo/EmployeePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/piaget/VZoo/EmployeePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/piaget/VZoo/HabitatController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/piaget/VZoo/HabitatController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/piaget/VZoo/HabitatManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/piaget/VZoo/HabitatManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/piaget/VZoo/HabitatPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/piaget/VZoo/HabitatPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/piaget/VZoo/Satisfation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/piaget/VZoo/entities/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/piaget/VZoo/entities/Animal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/piaget/VZoo/entities/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/piaget/VZoo/entities/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/piaget/VZoo/entities/Habitat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/piaget/VZoo/entities/Habitat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/addAnimal.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/addAnimal.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/addEmployee.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/addEmployee.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/addHabitat.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/addHabitat.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/animalPage.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/animalPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/animalPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/employeePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/employeePage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/habitatPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/habitatPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/zooPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/zooPage.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,6 +108,18 @@
       </method>
     </configuration>
   </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -151,12 +142,13 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="352" y="2" key="#animalPage.xsl" timestamp="1590520746356">
@@ -227,10 +219,11 @@
     </state>
     <state x="184" y="26" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1590520880885" />
     <state x="226" y="34" key="SettingsEditor/1680.-25.1536.832/0.0.1680.1010@0.0.1680.1010" timestamp="1593004351690" />
-    <state x="108" y="207" key="com.intellij.ide.util.TipDialog" timestamp="1591119271380">
-      <screen x="0" y="0" width="1366" height="768" />
+    <state x="202" y="388" key="com.intellij.ide.util.TipDialog" timestamp="1593024089529">
+      <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="108" y="207" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1591119271380" />
+    <state x="202" y="388" key="com.intellij.ide.util.TipDialog/0.0.2560.1440/-1920.0.1920.1080@0.0.2560.1440" timestamp="1593024089529" />
     <state x="830" y="388" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1590527864750">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
