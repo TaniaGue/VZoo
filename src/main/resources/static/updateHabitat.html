@@ -2,7 +2,7 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>VZoo - Add Habitat</title>
+    <title>VZoo - Update Habitat</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 </head>
 <body class="bg-light">
@@ -23,10 +23,10 @@
     </nav>
 
     <div class="container">
-        <h1 class="my-5">New Habitat</h1>
+        <h1 class="my-5">Update Habitat</h1>
 
         <div class="card border-0 shadow">
-            <form class="card-body" action="#" th:action="@{/addHabitat}" th:object="${habitat}" method="post">
+            <form class="card-body" action="#" th:action="@{/update/{id}(id=${habitat.id})}" th:object="${habitat}" method="post">
 
                 <div class="form-group">
                     <label for="name">Name</label>
@@ -54,7 +54,7 @@
 
                 <div class="text-right">
                     <a href="habitatPage.html" class="btn btn-secondary mr-2">Cancel</a>
-                    <button type="submit" class="btn btn-success" value="Add Habitat" href="habitatPage.html">Submit</button>
+                    <button type="submit" class="btn btn-success" value="Update Habitat" href="habitatPage.html">Submit</button>
                 </div>
 
 
