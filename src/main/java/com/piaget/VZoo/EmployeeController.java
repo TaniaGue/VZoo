@@ -61,6 +61,7 @@ public class EmployeeController {
         return "update-employee";
     }
 
+
     @PostMapping("/updateEmployee/{id}")
     public String updateEmployee(@PathVariable("id") long id, @Valid Employee employee, BindingResult result, Model model) {
         if (result.hasErrors()) {
@@ -69,14 +70,6 @@ public class EmployeeController {
         }
 
         employeeRepository.save(employee);
-        model.addAttribute("employee", employeeRepository.findAll());
-        return "employeePage";
-    }
-
-    @GetMapping("/deleteEmployee/{id}")
-    public String deleteEmployee(@PathVariable("id") long id, Model model) {
-        Employee employee = employeeRepository.findById(id);
-        employeeRepository.delete(employee);
         model.addAttribute("employee", employeeRepository.findAll());
         return "employeePage";
     }

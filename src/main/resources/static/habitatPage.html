@@ -54,7 +54,6 @@
                         <th>Name</th>
                         <th>Image</th>
                         <th>Area (m<sup>2</sup>)</th>
-                        <th>Actions</th>
                     </tr>
                     </thead>
 
@@ -71,11 +70,6 @@
                         </th>
                         <td th:text="${habitat.image}"></td>
                         <td th:text="${habitat.area}"></td>
-                        <td>
-                            <a th:href="@{/deleteHabitat/{id}(id=${habitat.id})}" class="btn btn-danger text-white btn-sm">
-                                Delete
-                            </a>
-                        </td>
                     </tr>
                     </tbody>
 

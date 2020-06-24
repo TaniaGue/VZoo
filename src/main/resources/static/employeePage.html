@@ -53,7 +53,6 @@
                             <th>Sound</th>
                             <th>Habitat</th>
                             <!--<th>Animal Satisfation</th>-->
-                            <th>Actions</th>
                         </tr>
                     </thead>
 
@@ -72,11 +71,6 @@
                             <td th:text="${employee.function}"></td>
                             <td th:text="${employee.animal}"></td>
                             <td th:text="${employee.habitat}"></td>
-                            <td>
-                                <a th:href="@{/deleteEmployee/{id}(id=${employee.id})}" class="btn btn-danger text-white btn-sm">
-                                    Delete
-                                </a>
-                            </td>
                         </tr>
                     </tbody>
 

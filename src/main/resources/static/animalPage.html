@@ -54,7 +54,6 @@
                             <th>Sound</th>
                             <th>Habitat</th>
                             <th>Animal Satisfation</th>
-                            <th>Actions</th>
                         </tr>
                     </thead>
 
@@ -74,11 +73,6 @@
                         <td th:text="${animal.sound}"></td>
                         <td th:text="${animal.habitat}"></td>
                         <td th:text="${animal.satisfaction}"></td>
-                        <td>
-                            <a th:href="@{/deleteAnimal/{id}(id=${animal.id})}" class="btn btn-danger text-white btn-sm">
-                                Delete
-                            </a>
-                        </td>
                     </tr>
                     </tbody>
                 </table>

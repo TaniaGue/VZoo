@@ -81,6 +81,7 @@ public class AnimalController {
         return "animalPage";
     }
 
+
     @GetMapping("/deleteAnimal/{id}")
     public String deleteAnimal(@PathVariable("id") long id, Model model) {
         Animal animal = animalRepository.findById(id);
