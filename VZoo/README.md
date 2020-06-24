@@ -1,2 +1,0 @@
-# VZoo
- Projecto Engenharia Software
