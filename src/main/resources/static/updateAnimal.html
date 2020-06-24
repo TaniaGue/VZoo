@@ -27,7 +27,7 @@
         <h1 class="my-5">Update Animal</h1>
 
         <div class="card border-0 shadow">
-            <form class="card-body" action="#" th:action="@{/update/{id}(id=${animal.id})}" th:object="${animal}" method="post">
+            <form class="card-body" action="#" th:action="@{/updateAnimal/{id}(id=${animal.id})}" th:object="${animal}" method="post">
 
                     <div class="form-group">
                         <label for="name">Name</label>
